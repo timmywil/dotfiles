@@ -65,7 +65,8 @@ installcask imageoptim
 installcask iterm2
 installcask macvim
 installcask miro-video-converter
-installcask sublime-text
+# I use Sublime Text 3
+# installcask sublime-text
 installcask the-unarchiver
 installcask tor-browser
 installcask transmission
