@@ -1,4 +1,8 @@
-# Mathias’s dotfiles
+# Mathias’s dotfiles (timmywil's fork)
+
+## Main fork differences
+
+Contains my personal configuration for emacs
 
 ## Installation
 
