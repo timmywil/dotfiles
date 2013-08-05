@@ -1,3 +1,5 @@
+" Set color scheme
+colorscheme desert
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
@@ -93,4 +95,75 @@ if has("autocmd")
 	filetype on
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
+
+	" Spacing/tabs per filetype
+	autocmd Filetype html setlocal et
+	autocmd Filetype jade setlocal et
+	autocmd Filetype css setlocal et
+	autocmd Filetype less setlocal et
+	autocmd Filetype javascript setlocal si ai
+	autocmd Filetype markdown setlocal et
 endif
+
+" Snippet settings
+let g:snipMate = {}
+let g:snipMate.scope_aliases = {}
+let g:snipMate.scope_aliases["less"] = "css"
+let g:snipMate.scope_aliases["jade"] = "html"
+let g:snipMate.scope_aliases["javascript"] = "javascript,javascript-jquery"
+
+" Custom key bindings
+
+" Sessions
+map <C-q> <ESC>:mksession! ~/.vim/session<CR>:wqa<CR>
+function! RestoreSession()
+  if argc() == 0 "vim called without arguments
+    execute "source ~/.vim/session"
+  end
+endfunction
+if has("autocmd")
+	autocmd VimEnter * call RestoreSession()
+endif
+
+" Map ALT-m to beginning of line at non-whitespace
+if has("gui_running")
+	set macmeta
+endif
+map <M-m> ^
+
+" Tags keys
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+" Map CTRL-/ to clear searches
+nmap <M-/> :let @/=""<CR>
+
+" Insert mode keys
+
+" map CTRL-e to end-of-line
+imap <C-e> <esc>$i<right>
+" map CTRL-a to beginning-of-line
+imap <C-a> <esc>0i
+" map ALT-j to next line
+imap <M-j> <esc>ja
+" map ALT-k to previous line
+imap <M-k> <esc>ka
+" map CTRL-f to next-character
+imap <C-f> <esc>la
+" map CTRL-b to previous-character
+imap <C-b> <esc>ha
+" map ALT-m to beginning of line at non-whitespace
+imap <M-m> <esc>^i
+" map ALT-f & ALT-b to next/previous-word
+imap <M-f> <esc>lwi
+imap <M-b> <esc>bi
+" map CTRL-k to cut the rest of the line
+imap <C-k> <esc>ld$a
+
+" map CTRL-d to delete
+imap <C-d> <delete>
+" ALT-d to delete word
+imap <M-d> <esc>ldwa
+
+" Pathogen (Install git repos in the ~/.vim/bundle path)
+" execute pathogen#infect()
