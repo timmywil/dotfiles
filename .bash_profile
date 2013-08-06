@@ -38,21 +38,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
 
-# Git aliases
-alias k="git commit"
-alias gp="git push"
-alias gpo="git push origin"
-alias gpom="git push origin master"
-alias gpum="git push upstream master"
-alias gpu="git pull --rebase"
-alias gpuo="git pull --rebase origin"
-alias gpuom="git pull --rebase origin master"
-alias gpuu="git pull --rebase upstream"
-alias gpuum="git pull --rebase upstream master"
-
-# For work
-alias gpod="git push origin develop"
-alias gpuod="git pull --rebase origin develop"
 ###-begin-npm-completion-###
 #
 # npm command completion script
