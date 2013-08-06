@@ -4,7 +4,7 @@ export PATH="$HOME/bin:$PATH"
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in {~/.{path,bash_prompt,exports,aliases,functions,git-completion.bash,extra},/usr/share/git-core/git-completion.bash}; do
+for file in {~/.{path,bash_prompt,exports,aliases,functions,git-completion.bash,extra},$(brew --prefix)/etc/bash_completion.d/git-completion.bash}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
