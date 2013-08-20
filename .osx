@@ -13,9 +13,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "Timmy\'s Puter"
-sudo scutil --set HostName "Timmy\'s Puter"
-sudo scutil --set LocalHostName "Timmy\'s Puter"
+sudo scutil --set ComputerName "TimmysPuter"
+sudo scutil --set HostName "TimmysPuter"
+sudo scutil --set LocalHostName "TimmysPuter"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Timmy\'s Macbook Air"
 
 # Set standby delay to 24 hours (default is 1 hour)
@@ -453,6 +453,7 @@ defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Fi
 # Disable send and reply animations in Mail.app
 defaults write com.apple.mail DisableReplyAnimations -bool true
 defaults write com.apple.mail DisableSendAnimations -bool true
+defaults write com.apple.mail SendFormat Plain
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
