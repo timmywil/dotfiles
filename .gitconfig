@@ -9,6 +9,12 @@
 	di = !"d() { git diff --patch-with-stat HEAD~$1; }; git diff-index --quiet HEAD -- || clear; d"
 	# Pull in remote changes for the current repository and all its submodules
 	p = !"git pull; git submodule foreach git pull origin master"
+	# Easy pull request commands. Thanks Corey.
+	pr = "!f() { git fetch -fu origin refs/pull/$1/head:pr/$1 ; git co pr/$1; } ; f"
+	prr = "!f() { git fetch -fu $1 refs/pull/$2/head:pr/$2 ; git co pr/$2; } ; f"
+	pru = "!f() { git fetch -fu upstream refs/pull/$1/head:pr/$1 ; git co pr/$1; } ; f"
+	pr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
+	pp = format-patch -U8 --stdout
 	# Clone a repository including all submodules
 	c = clone --recursive
 	# Commit all changes
