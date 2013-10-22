@@ -74,5 +74,10 @@ installcask ukelele
 installcask virtualbox
 installcask vlc
 
+# Install alfred
+installcask alfred
+# Link alfred
+brew cask alfred link
+
 # Remove outdated versions from the cellar
 brew cleanup
