@@ -164,6 +164,9 @@ defaults write NSGlobalDomain AppleMetricUnits -bool false
 # Set the timezone; see `systemsetup -listtimezones` for other values
 systemsetup -settimezone "America/New_York" > /dev/null
 
+# Set time display preference
+defaults write com.apple.menuextra.clock DateFormat -string "EEE MMM d  HH:mm"
+
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
