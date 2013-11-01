@@ -10,7 +10,7 @@ alias -- -="cd -"
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
+alias p="cd ~/projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -72,7 +72,7 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en1"
-alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
+alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
