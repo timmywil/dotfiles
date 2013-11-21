@@ -537,6 +537,9 @@ open "${HOME}/init/Mathias.itermcolors"
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+# Hide iTerm from dock
+/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' /opt/homebrew-cask/Caskroom/iterm2/1.0.0/iTerm.app/Contents/Info.plist
+
 ###############################################################################
 # Time Machine                                                                #
 ###############################################################################
