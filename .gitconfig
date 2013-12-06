@@ -41,6 +41,7 @@
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore-global
 	attributesfile = ~/.gitattributes
+	editor = "subl -n -w"
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and
 	# all kinds of trailing whitespace as an error.
 	# [default] trailing-space: looks for spaces at the end of a line
