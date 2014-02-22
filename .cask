@@ -24,3 +24,6 @@ installcask vlc
 installcask alfred
 # Link alfred
 brew cask alfred link
+
+# Install quicklook plugins
+installcask qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webp-quicklook suspicious-package
