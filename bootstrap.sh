@@ -4,5 +4,5 @@ git pull origin master
 
 rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 	--exclude ".idea/" --exclude ".gitignore" \
-	--exclude "README.md" --exclude "LICENSE-MIT.txt" -av --no-perms . ~
+	--exclude "README.md" --exclude "LICENSE-MIT.txt" -avh --no-perms . ~
 source ~/.bash_profile
