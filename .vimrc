@@ -1,5 +1,9 @@
 " Set color scheme
 colorscheme desert
+" Use the Solarized Dark theme
+" set background=dark
+" colorscheme solarized
+
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)

@@ -4,6 +4,8 @@
 
 Contains my personal configuration for emacs
 
+![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
+
 ## Installation
 
 ### Using Git and the bootstrap script
