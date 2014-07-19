@@ -579,7 +579,7 @@ open "${HOME}/init/Solarized Dark.itermcolors"
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Hide iTerm from dock
-/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' /opt/homebrew-cask/Caskroom/iterm2/1.0.0/iTerm.app/Contents/Info.plist
+/usr/libexec/PlistBuddy -c 'Add :LSUIElement bool true' /opt/homebrew-cask/Caskroom/iterm2/2.0.0/iTerm.app/Contents/Info.plist
 
 ###############################################################################
 # Time Machine                                                                #
