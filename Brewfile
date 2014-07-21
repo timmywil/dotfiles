@@ -45,7 +45,8 @@ install hashpump
 install imagemagick --with-webp
 install lynx
 install nmap
-# I use the n npm module to manage node verisons
+# I use the n module to manage node verisons
+install n
 # install node # This installs `npm` too using the recommended installation method
 install p7zip
 install pigz
