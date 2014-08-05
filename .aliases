@@ -15,6 +15,9 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 
+# Webstorm
+alias ws="wstorm"
+
 # Git aliases
 alias k="git commit"
 alias gp="git push"
