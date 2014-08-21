@@ -1,6 +1,10 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:/usr/local/bin:$PATH"
 
+# Configure PKG_CONFIG_PATH
+# See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
+export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
