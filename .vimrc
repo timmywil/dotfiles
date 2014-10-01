@@ -97,34 +97,8 @@ if has("autocmd")
 	filetype on
 	" Treat .json files as .js
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
-
-	" Spacing/tabs per filetype
-	autocmd Filetype html setlocal et
-	autocmd Filetype jade setlocal et
-	autocmd Filetype css setlocal et
-	autocmd Filetype less setlocal et
-	autocmd Filetype javascript setlocal si ai
-	autocmd Filetype markdown setlocal et
-endif
-
-" Snippet settings
-let g:snipMate = {}
-let g:snipMate.scope_aliases = {}
-let g:snipMate.scope_aliases["less"] = "css"
-let g:snipMate.scope_aliases["jade"] = "html"
-let g:snipMate.scope_aliases["javascript"] = "javascript,javascript-jquery"
-
-" Custom key bindings
-
-" Sessions
-map <C-q> <ESC>:mksession! ~/.vim/session<CR>:wqa<CR>
-function! RestoreSession()
-  if argc() == 0 "vim called without arguments
-    execute "source ~/.vim/session"
-  end
-endfunction
-if has("autocmd")
-	autocmd VimEnter * call RestoreSession()
+	" Treat .md files as Markdown
+	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
 endif
 
 " Map ALT-m to beginning of line at non-whitespace
