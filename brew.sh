@@ -92,7 +92,7 @@ brew install zopfli
 # Use the n module to install node versions
 brew install n
 
-brew install homebrew/versions/lua52
+# brew install homebrew/versions/lua52
 
 # Remove outdated versions from the cellar.
 brew cleanup
@@ -103,6 +103,7 @@ brew cleanup
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
+brew cask install alfred 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install google-chrome-canary 2> /dev/null
@@ -113,7 +114,6 @@ brew cask install macvim 2> /dev/null
 brew cask install miro-video-converter 2> /dev/null
 brew cask install opera 2> /dev/null
 brew cask install opera-developer 2> /dev/null
-brew cask install opera-next 2> /dev/null
 brew cask install the-unarchiver 2> /dev/null
 brew cask install torbrowser 2> /dev/null
 brew cask install transmission 2> /dev/null
