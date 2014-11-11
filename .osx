@@ -549,6 +549,10 @@ killall mds > /dev/null 2>&1
 sudo mdutil -i on / > /dev/null
 # Rebuild the index from scratch
 sudo mdutil -E / > /dev/null
+# Force indexing of symlinks
+# This enables Applications not installed directly in
+# /Applications to show up in Spotlight
+find $PATH -type l
 
 ###############################################################################
 # Terminal & iTerm 2                                                          #
