@@ -103,7 +103,6 @@ brew cleanup
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
-brew cask install alfred 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install google-chrome-canary 2> /dev/null
