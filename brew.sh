@@ -97,12 +97,11 @@ brew install n
 brew cleanup
 
 # Install native apps
-# Usage: `brew bundle Caskfile`
-
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 brew cask install dropbox 2> /dev/null
+brew cask install firefoxdeveloperedition 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install google-chrome-canary 2> /dev/null
 brew cask install imagealpha 2> /dev/null
