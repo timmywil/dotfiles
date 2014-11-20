@@ -498,6 +498,10 @@ defaults write com.apple.mail DisableReplyAnimations -bool true
 defaults write com.apple.mail DisableSendAnimations -bool true
 defaults write com.apple.mail SendFormat Plain
 
+# Disable mail sounds
+defaults write com.apple.mail MailSound -string ""
+defaults write com.apple.mail PlayMailSounds -bool false
+
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
