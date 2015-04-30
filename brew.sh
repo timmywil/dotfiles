@@ -129,6 +129,7 @@ brew cask install the-unarchiver 2> /dev/null
 brew cask install torbrowser 2> /dev/null
 brew cask install transmission 2> /dev/null
 brew cask install ukelele 2> /dev/null
+brew cask install vagrant 2> /dev/null
 brew cask install virtualbox 2> /dev/null
 brew cask install vlc 2> /dev/null
 
