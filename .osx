@@ -489,6 +489,10 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 # Add a context menu item for showing the Web Inspector in web views
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+# Change the keyboard shortcut ⌘ + w to close tabs instead of windows
+defaults write com.apple.universalaccess com.apple.custommenu.apps -array "com.apple.Safari"
+defaults write com.apple.Safari NSUserKeyEquivalents -dict-add "Close Tab" "@w"
+
 ###############################################################################
 # Mail                                                                        #
 ###############################################################################
