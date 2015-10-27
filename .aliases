@@ -72,6 +72,9 @@ alias update='sudo softwareupdate -i -a; brew update; brew upgrade --all; brew c
 # Show outdated dependencies at 0 depth
 alias old='npm outdated --depth 0'
 
+# List dependences at 0 depth
+alias nls='npm ls --depth 0'
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
