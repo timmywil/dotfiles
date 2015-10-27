@@ -120,6 +120,7 @@ brew cleanup
 
 # Install native apps
 brew install caskroom/cask/brew-cask
+brew untap caskroom/versions
 brew tap caskroom/versions
 
 brew cask install dropbox 2> /dev/null
