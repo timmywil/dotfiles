@@ -33,6 +33,9 @@ alias gpuom="git pull --rebase origin master"
 alias gpuu="git pull --rebase upstream"
 alias gpuum="git pull --rebase upstream master"
 
+# dinghy shell command
+alias dinghysh="eval \"$(dinghy shellinit)\""
+
 # For work
 alias gpod="git push origin develop"
 alias gpuod="git pull --rebase origin develop"

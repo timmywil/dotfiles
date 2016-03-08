@@ -103,6 +103,11 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 
+# Install docker
+brew install docker docker-machine
+brew tap codekitchen/dinghy
+brew install dinghy
+
 # Install latest ruby and common gems
 brew install ruby
 gem update --system
