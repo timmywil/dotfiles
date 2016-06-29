@@ -19,6 +19,19 @@ for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
 done;
 unset file;
 
+# In order for gpg to find gpg-agent, gpg-agent must be running, and there must be an env
+# variable pointing GPG to the gpg-agent socket. This little script, which must be sourced
+# in your shell's init script (ie, .bash_profile, .zshrc, whatever), will either start
+# gpg-agent or set up the GPG_AGENT_INFO variable if it's already running.
+
+# Add the following to your shell init to set up gpg-agent automatically for every shell
+if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
+    source ~/.gnupg/.gpg-agent-info
+    export GPG_AGENT_INFO
+else
+    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+fi
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
@@ -36,7 +49,7 @@ for option in autocd globstar; do
 done;
 
 # Add tab completion for many Bash commands
-if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
+if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
 	source "$(brew --prefix)/share/bash-completion/bash_completion";
 elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
