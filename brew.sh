@@ -47,6 +47,8 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
+
+brew unlink php56
 brew install homebrew/php/php56 --with-gmp
 
 # Install font tools.
@@ -109,7 +111,7 @@ brew install docker docker-machine
 brew tap codekitchen/dinghy
 brew install dinghy
 
-# Install gpg depdencies
+# Install gpg dependencies
 brew install gnupg gpg-agent pinentry-mac
 
 # Install latest ruby and common gems
@@ -140,7 +142,6 @@ brew cask install imagealpha 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install macvim 2> /dev/null
-brew cask install miro-video-converter 2> /dev/null
 brew cask install opera 2> /dev/null
 brew cask install opera-developer 2> /dev/null
 brew cask install the-unarchiver 2> /dev/null
