@@ -32,17 +32,9 @@ eval "$(rbenv init -)"
 #export DOCKER_TLS_VERIFY=1
 #export DOCKER_MACHINE_NAME=dinghy
 
-# pyenv
-#export PYENV_ROOT=/usr/local/var/pyenv
-# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-# if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-
-# macOS Sierra no longer saves SSH passphrases to the keychain
-ssh-add -A &> /dev/null
-
 # Load the shell dotfiles, and then some:
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{bash_prompt,exports,aliases,functions,extra}; do
+for file in ~/.{path,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
