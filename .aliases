@@ -21,7 +21,7 @@ alias h="history"
 alias j="jobs"
 
 # Webstorm
-alias ws="wstorm"
+alias ws='/c/Program\ Files\ \(x86\)/JetBrains/WebStorm\ 2016.2.3/bin/WebStorm.exe'
 
 # Git aliases
 alias k="git commit"
@@ -36,7 +36,7 @@ alias gpuu="git pull --rebase upstream"
 alias gpuum="git pull --rebase upstream master"
 
 # dinghy shell command
-alias dinghysh="eval \"$(dinghy shellinit)\""
+#alias dinghysh="eval \"$(dinghy shellinit)\""
 
 # For work
 alias gpod="git push origin develop"

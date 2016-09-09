@@ -6,15 +6,15 @@ export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
 
 # Docker vars
-export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/dinghy"
-export DOCKER_TLS_VERIFY=1
-export DOCKER_MACHINE_NAME=dinghy
+#export DOCKER_HOST="tcp://192.168.99.100:2376"
+#export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/dinghy"
+#export DOCKER_TLS_VERIFY=1
+#export DOCKER_MACHINE_NAME=dinghy
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{path,bash_prompt,exports,aliases,functions,extra}; do
+for file in ~/.{path,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
@@ -25,12 +25,12 @@ unset file;
 # gpg-agent or set up the GPG_AGENT_INFO variable if it's already running.
 
 # Add the following to your shell init to set up gpg-agent automatically for every shell
-if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
-    source ~/.gnupg/.gpg-agent-info
-    export GPG_AGENT_INFO
-else
-    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
-fi
+#if [ -f ~/.gnupg/.gpg-agent-info ] && [ -n "$(pgrep gpg-agent)" ]; then
+#    source ~/.gnupg/.gpg-agent-info
+#    export GPG_AGENT_INFO
+#else
+#    eval $(gpg-agent --daemon --write-env-file ~/.gnupg/.gpg-agent-info)
+#fi
 
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
