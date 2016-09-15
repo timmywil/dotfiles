@@ -21,7 +21,9 @@ alias h="history"
 alias j="jobs"
 
 # Webstorm
-alias ws='/c/Program\ Files\ \(x86\)/JetBrains/WebStorm\ 2016.2.3/bin/WebStorm.exe'
+ws() {
+    /c/Program\ Files\ \(x86\)/JetBrains/WebStorm\ 2016.2.3/bin/WebStorm64.exe $PWD/$1
+}
 
 # Git aliases
 alias k="git commit"
