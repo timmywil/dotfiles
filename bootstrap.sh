@@ -6,6 +6,7 @@ cp ./.bash_profile ~/
 cp ./.bash_prompt ~/
 cp ./.extra ~/
 cp ./.gitconfig ~/
+cp ./.gitattributes ~/
 cp ./.gitignore-global ~/
 cp ./.functions ~/
 cp ./.exports ~/
@@ -13,4 +14,4 @@ cp ./.exports ~/
 cp ./.gnupg/gpg.conf ~/.gnupg/
 #cp -r ~/.gnupg/* ~/AppData/Roaming/gnupg/
 
-source ~/.bash_profile;
+source ./.bash_profile;
