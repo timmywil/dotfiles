@@ -15,6 +15,9 @@ export PATH=/usr/local/sbin:$PATH
 # Add fastlane to the `$PATH`
 # export PATH="$HOME/.fastlane/bin:$PATH"
 
+# Add python to PATH
+export PATH="$PATH:/c/Python27/"
+
 # Configure PKG_CONFIG_PATH
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
 export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
