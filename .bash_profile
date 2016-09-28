@@ -17,6 +17,8 @@ export PATH=/usr/local/sbin:$PATH
 
 # Add python to PATH
 export PATH="$PATH:/c/Python27/"
+export PYTHONPATH="/c/Python27/"
+export PYTHON="/c/Python27/python.exe"
 
 # Configure PKG_CONFIG_PATH
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
