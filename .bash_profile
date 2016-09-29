@@ -11,6 +11,9 @@ export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/dinghy"
 export DOCKER_TLS_VERIFY=1
 export DOCKER_MACHINE_NAME=dinghy
 
+# macOS Sierra no longer saves SSH passphrases to the keychain
+ssh-add -A &> /dev/null
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
