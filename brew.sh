@@ -112,7 +112,7 @@ brew tap codekitchen/dinghy
 brew install dinghy
 
 # Install gpg dependencies
-brew install gnupg gpg-agent pinentry-mac
+brew install gpg gpg-agent pinentry-mac
 
 # Install latest ruby and common gems
 brew install ruby
