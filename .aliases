@@ -24,7 +24,7 @@ alias j="jobs"
 alias ws="wstorm"
 
 # Hosts file
-alias hosts="cd /etc/hosts"
+alias hosts="cd /etc"
 
 # Git aliases
 alias k="git commit"
