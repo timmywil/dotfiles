@@ -23,6 +23,9 @@ alias j="jobs"
 # Webstorm
 alias ws="wstorm"
 
+# Hosts file
+alias hosts="cd /etc/hosts"
+
 # Git aliases
 alias k="git commit"
 alias gp="git push"
