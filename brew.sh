@@ -131,8 +131,8 @@ brew install n
 brew cleanup
 
 # Install native apps
-brew untap caskroom/versions
-brew tap caskroom/versions
+#brew untap caskroom/versions
+#brew tap caskroom/versions
 
 brew cask install dropbox 2> /dev/null
 brew cask install firefoxdeveloperedition 2> /dev/null
