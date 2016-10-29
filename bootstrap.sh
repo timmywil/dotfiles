@@ -14,5 +14,5 @@ rsync --exclude ".git/" \
 
 rsync --exclude ".git/" \
       --exclude ".gitignore" \
-      -avh --no-perms emacs-for-clojure/ ~/.emacs.d/
+      -avh --no-perms emacs.d/ ~/.emacs.d/
 source ~/.bash_profile;
