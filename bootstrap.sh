@@ -9,5 +9,10 @@ rsync --exclude ".git/" \
 	--exclude "bootstrap.sh" \
 	--exclude "README.md" \
 	--exclude "LICENSE-MIT.txt" \
+	--exclude "emacs-for-clojure/" \
 	-avh --no-perms . ~;
+
+rsync --exclude ".git/" \
+      --exclude ".gitignore" \
+      -avh --no-perms emacs-for-clojure/ ~/.emacs.d/
 source ~/.bash_profile;

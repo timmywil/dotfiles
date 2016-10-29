@@ -104,6 +104,7 @@ brew install tree
 brew install vbindiff
 brew install webkit2png
 brew install zopfli
+brew install lein
 
 # Install docker
 brew install docker docker-machine

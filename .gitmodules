@@ -1,0 +1,3 @@
+[submodule "emacs-for-clojure"]
+	path = emacs-for-clojure
+	url = git@github.com:timmywil/emacs-for-clojure.git
