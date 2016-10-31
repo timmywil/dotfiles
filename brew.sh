@@ -108,6 +108,7 @@ brew install zopfli
 # For Clojure/Emacs
 brew install leiningen
 brew install the_silver_searcher
+brew install boot-clj
 
 # Install docker
 brew install docker docker-machine
