@@ -104,7 +104,10 @@ brew install tree
 brew install vbindiff
 brew install webkit2png
 brew install zopfli
+
+# For Clojure/Emacs
 brew install leiningen
+brew install the_silver_searcher
 
 # Install docker
 brew install docker docker-machine
