@@ -23,6 +23,9 @@ alias j="jobs"
 # Webstorm
 alias ws="wstorm"
 
+# Emacs
+alias emacs="open -a Emacs"
+
 # Hosts file
 alias hosts="cd /etc"
 
