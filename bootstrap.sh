@@ -9,7 +9,7 @@ rsync --exclude ".git/" \
 	--exclude "bootstrap.sh" \
 	--exclude "README.md" \
 	--exclude "LICENSE-MIT.txt" \
-	--exclude "emacs-for-clojure/" \
+	--exclude "emacs.d/" \
 	-avh --no-perms . ~;
 
 rsync --exclude ".git/" \
