@@ -7,7 +7,7 @@
 
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
 	export TERM='gnome-256color';
-elif infocmp xterm-256color >/dev/null 2>&1; then
+elif [[ ! -n "$INSIDE_EMACS" ]] && infocmp xterm-256color >/dev/null 2>&1; then
 	export TERM='xterm-256color';
 fi;
 
@@ -34,16 +34,18 @@ prompt_git() {
 				s+='!';
 			fi;
 
-			# Check for untracked files.
-			if [ -n "$(git ls-files --others --exclude-standard)" ]; then
-				s+='?';
-			fi;
+                        # For some reason, this causes git usage printouts in emacs
+                        if [ ! -n "$INSIDE_EMACS" ]; then
+                        	# Check for untracked files.
+				if [ -n "$(git ls-files --others --exclude-standard)" ]; then
+					s+='?';
+				fi;
+                        fi;
 
 			# Check for stashed files.
 			if $(git rev-parse --verify refs/stash &>/dev/null); then
 				s+='$';
 			fi;
-
 		fi;
 
 		# Get the short symbolic ref.
@@ -105,8 +107,14 @@ else
 	hostStyle="${yellow}";
 fi;
 
-# Set the terminal title and prompt.
-PS1="\[\033]0;\W\007\]"; # working directory base name
+# Set the terminal title and prompt if not in emacs
+if [ -n "$INSIDE_EMACS" ]; then
+	PS1=""
+else
+	# working directory base name
+	PS1="\[\033]0;\W\007\]"
+fi;
+
 PS1+="\[${bold}\]"; # newline
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";

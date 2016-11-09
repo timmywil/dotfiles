@@ -14,5 +14,6 @@ rsync --exclude ".git/" \
 
 rsync --exclude ".git/" \
       --exclude ".gitignore" \
+      --exclude "elpa/" \
       -avh --no-perms emacs.d/ ~/.emacs.d/
 source ~/.bash_profile;
