@@ -11,6 +11,9 @@ export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/dinghy"
 export DOCKER_TLS_VERIFY=1
 export DOCKER_MACHINE_NAME=dinghy
 
+# Set clojure version in environment
+export BOOT_CLOJURE_VERSION="1.8.0"
+
 # macOS Sierra no longer saves SSH passphrases to the keychain
 ssh-add -A &> /dev/null
 
