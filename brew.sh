@@ -38,8 +38,8 @@ brew install wget --with-iri
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
 # see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
+#brew install ringojs
+#brew install narwhal
 
 # Install more recent versions of some macOS tools.
 brew install vim --override-system-vi
@@ -111,9 +111,9 @@ brew install the_silver_searcher
 brew install boot-clj
 
 # Install docker
-brew install docker docker-machine
-brew tap codekitchen/dinghy
-brew install dinghy
+brew install docker docker-compose
+#brew tap codekitchen/dinghy
+#brew install dinghy
 
 # Install gpg dependencies
 brew install gpg gpg-agent pinentry-mac

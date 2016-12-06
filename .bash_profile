@@ -6,10 +6,10 @@ export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
 
 # Docker vars
-export DOCKER_HOST="tcp://192.168.99.100:2376"
-export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/dinghy"
-export DOCKER_TLS_VERIFY=1
-export DOCKER_MACHINE_NAME=dinghy
+#export DOCKER_HOST="tcp://192.168.99.100:2376"
+#export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/dinghy"
+#export DOCKER_TLS_VERIFY=1
+#export DOCKER_MACHINE_NAME=dinghy
 
 # Set clojure version in environment
 export BOOT_CLOJURE_VERSION="1.8.0"

@@ -97,9 +97,6 @@
 
 [core]
 
-        # Set git editor to emacs
-        editor = emacs
-
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore-global
 	attributesfile = ~/.gitattributes
