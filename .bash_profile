@@ -14,6 +14,11 @@ export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
 # Set clojure version in environment
 export BOOT_CLOJURE_VERSION="1.8.0"
 
+# pyenv
+#export PYENV_ROOT=/usr/local/var/pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 # macOS Sierra no longer saves SSH passphrases to the keychain
 ssh-add -A &> /dev/null
 
