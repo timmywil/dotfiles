@@ -21,7 +21,7 @@ alias h="history"
 alias j="jobs"
 
 # Webstorm
-alias ws="wstorm"
+alias ws="webstorm"
 
 # Emacs
 alias emacs="open -a Emacs"
