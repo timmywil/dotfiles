@@ -136,6 +136,7 @@ brew cleanup
 #brew tap caskroom/versions
 
 brew cask install dropbox 2> /dev/null
+brew cask install firefox 2> /dev/null
 brew cask install firefoxdeveloperedition 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install google-chrome-canary 2> /dev/null
