@@ -115,9 +115,6 @@ brew install docker docker-compose
 #brew tap codekitchen/dinghy
 #brew install dinghy
 
-# Install gpg dependencies
-brew install gpg gpg-agent pinentry-mac
-
 # Install latest ruby and common gems
 brew install ruby
 gem update --system
