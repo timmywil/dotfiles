@@ -1,8 +1,10 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
-# Add android SDK tools to the `$PATH`
-export PATH="$PATH:/Users/home/Library/Android/sdk/platform-tools"
+# Add Android SDK tools to the `$PATH`
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 # Configure PKG_CONFIG_PATH
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
