@@ -1,6 +1,9 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
+# Add android SDK tools to the `$PATH`
+export PATH="$PATH:/pathToTheAndroidSdkFolder/android-sdk-mac_86/platform-tools"
+
 # Configure PKG_CONFIG_PATH
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
 export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
