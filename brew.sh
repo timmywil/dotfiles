@@ -49,6 +49,7 @@ brew install homebrew/dupes/screen
 
 brew unlink php56
 brew install homebrew/php/php56 --with-gmp
+brew link php56
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -79,7 +80,7 @@ brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
+#brew install xpdf
 brew install xz
 
 # Install other useful binaries.
@@ -114,6 +115,9 @@ brew install boot-clj
 brew install docker docker-compose
 #brew tap codekitchen/dinghy
 #brew install dinghy
+
+# Install Android SDK
+brew install android-sdk
 
 # Install latest ruby and common gems
 brew install ruby
