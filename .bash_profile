@@ -3,7 +3,6 @@ export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Add Android SDK tools to the `$PATH`
 export ANDROID_HOME=/usr/local/opt/android-sdk
-export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/bin
 
 # Configure PKG_CONFIG_PATH
