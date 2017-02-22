@@ -119,6 +119,9 @@ brew install docker docker-compose
 # Install Android SDK
 brew install android-sdk
 
+# Install git-flow
+brew install git-flow
+
 # Install latest ruby and common gems
 brew install ruby
 gem update --system
