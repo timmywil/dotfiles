@@ -96,6 +96,9 @@ alias old='npm outdated --depth 0'
 # List dependences at 0 depth
 alias nls='npm ls --depth 0'
 
+# Google Chrome
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
