@@ -120,7 +120,7 @@ brew install docker docker-compose
 brew install android-sdk
 
 # Install git-flow
-brew install git-flow
+brew install git-flow-avh
 
 # Install latest ruby and common gems
 brew install ruby
