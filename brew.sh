@@ -127,7 +127,6 @@ brew install git-flow-avh
 brew install ruby
 gem update --system
 gem update
-gem install sass
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
