@@ -105,7 +105,8 @@ brew install tree
 brew install vbindiff
 brew install webkit2png
 brew install zopfli
-brew install yarn
+# Ignore dependencies since we install node with n
+brew install --ignore-dependencies yarn
 
 # For Clojure/Emacs
 brew install leiningen
@@ -117,8 +118,15 @@ brew install docker docker-compose
 #brew tap codekitchen/dinghy
 #brew install dinghy
 
-# Install Android SDK
-brew install android-sdk
+# Pylon stuff
+brew install pyenv
+brew install redis
+brew install postgresql
+brew install pyenv-virtualenv
+brew install graphviz
+
+# Cook companion deployment
+brew install amazon-ecr-credential-helper
 
 # Install git-flow
 brew install git-flow-avh
@@ -161,6 +169,9 @@ brew cask install ukelele 2> /dev/null
 brew cask install vagrant 2> /dev/null
 brew cask install virtualbox 2> /dev/null
 brew cask install vlc 2> /dev/null
+
+# Cook companion deployment
+brew cask install aws-vault
 
 # Remove outdated versions of apps
 brew cask cleanup
