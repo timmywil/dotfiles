@@ -6,12 +6,11 @@
 brew update
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
-ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
@@ -39,17 +38,18 @@ brew install wget --with-iri
 # Install RingoJS and Narwhal.
 # Note that the order in which these are installed is important;
 # see http://git.io/brew-narwhal-ringo.
-brew install ringojs
-brew install narwhal
+#brew install ringojs
+#brew install narwhal
 
 # Install more recent versions of some macOS tools.
-brew install vim --override-system-vi
+brew install vim --with-override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
 brew unlink php56
 brew install homebrew/php/php56 --with-gmp
+brew link php56
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -80,7 +80,7 @@ brew install tcpflow
 brew install tcpreplay
 brew install tcptrace
 brew install ucspi-tcp # `tcpserver` etc.
-brew install xpdf
+#brew install xpdf
 brew install xz
 
 # Install other useful binaries.
@@ -105,20 +105,36 @@ brew install tree
 brew install vbindiff
 brew install webkit2png
 brew install zopfli
+# Ignore dependencies since we install node with n
+brew install --ignore-dependencies yarn
+
+# For Clojure/Emacs
+brew install leiningen
+brew install the_silver_searcher
+brew install boot-clj
 
 # Install docker
-brew install docker docker-machine
-brew tap codekitchen/dinghy
-brew install dinghy
+brew install docker docker-compose
+#brew tap codekitchen/dinghy
+#brew install dinghy
 
-# Install gpg dependencies
-brew install gnupg gpg-agent pinentry-mac
+# Pylon stuff
+brew install pyenv
+brew install redis
+brew install postgresql
+brew install pyenv-virtualenv
+brew install graphviz
+
+# Cook companion deployment
+brew install amazon-ecr-credential-helper
+
+# Install git-flow
+brew install git-flow-avh
 
 # Install latest ruby and common gems
 brew install ruby
 gem update --system
 gem update
-gem install sass
 
 # Install Node.js. Note: this installs `npm` too, using the recommended
 # installation method.
@@ -131,16 +147,18 @@ brew install n
 brew cleanup
 
 # Install native apps
-brew untap caskroom/versions
-brew tap caskroom/versions
+#brew untap caskroom/versions
+#brew tap caskroom/versions
 
 brew cask install dropbox 2> /dev/null
+brew cask install firefox 2> /dev/null
 brew cask install firefoxdeveloperedition 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install google-chrome-canary 2> /dev/null
 brew cask install imagealpha 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
+brew cask install java 2> /dev/null
 brew cask install macvim 2> /dev/null
 brew cask install opera 2> /dev/null
 brew cask install opera-developer 2> /dev/null
@@ -151,6 +169,9 @@ brew cask install ukelele 2> /dev/null
 brew cask install vagrant 2> /dev/null
 brew cask install virtualbox 2> /dev/null
 brew cask install vlc 2> /dev/null
+
+# Cook companion deployment
+brew cask install aws-vault
 
 # Remove outdated versions of apps
 brew cask cleanup
