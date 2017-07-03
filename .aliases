@@ -17,7 +17,7 @@ alias g="git"
 
 # Webstorm
 ws() {
-    /c/Program\ Files\ \(x86\)/JetBrains/WebStorm\ 2016.2.3/bin/WebStorm64.exe $PWD/$1
+    /c/Program\ Files/JetBrains/WebStorm\ 2017.1.4/bin/webstorm64.exe $PWD/$1
 }
 
 # Git aliases
