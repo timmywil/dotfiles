@@ -105,8 +105,6 @@ brew install tree
 brew install vbindiff
 brew install webkit2png
 brew install zopfli
-# Ignore dependencies since we install node with n
-brew install --ignore-dependencies yarn
 
 # For Clojure/Emacs
 brew install leiningen
