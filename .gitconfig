@@ -117,7 +117,8 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
-	autocrlf = true
+	# Webstorm handles line endings
+	autocrlf = false
 
 [color]
 
