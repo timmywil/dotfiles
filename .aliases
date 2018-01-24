@@ -91,9 +91,6 @@ alias old='npm outdated --depth 0'
 # List dependences at 0 depth
 alias nls='npm ls --depth 0'
 
-# Update npm version without commit
-alias npmv='npm version --git-tag-version=false'
-
 # Google Chrome
 alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
