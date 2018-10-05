@@ -103,11 +103,6 @@ brew install leiningen
 brew install the_silver_searcher
 brew install boot-clj
 
-# Install docker
-brew install docker docker-compose
-#brew tap codekitchen/dinghy
-#brew install dinghy
-
 # Pylon stuff
 brew install pyenv
 brew install redis
@@ -140,6 +135,7 @@ brew cleanup
 #brew untap caskroom/versions
 #brew tap caskroom/versions
 
+brew cask install docker 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install firefox 2> /dev/null
 brew cask install firefoxdeveloperedition 2> /dev/null
