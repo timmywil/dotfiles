@@ -129,9 +129,6 @@ gem update
 # Use the n module to install node versions
 brew install n
 
-# Remove outdated versions from the cellar.
-brew cleanup
-
 # Install native apps
 #brew untap caskroom/versions
 #brew tap caskroom/versions
@@ -160,5 +157,6 @@ brew cask install vlc 2> /dev/null
 # Cook companion deployment
 brew cask install aws-vault
 
-# Remove outdated versions of apps
-brew cask cleanup
+# Remove outdated versions from the cellar.
+# This also cleans up casks
+brew cleanup
