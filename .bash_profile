@@ -2,8 +2,12 @@
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Add Android SDK tools to the `$PATH`
-export ANDROID_HOME=/usr/local/opt/android-sdk
+export ANDROID_HOME=/Users/home/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/bin
+
+# Add Java to the `$PATH`
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=${PATH}:${JAVA_HOME}/bin
 
 # Configure PKG_CONFIG_PATH
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
