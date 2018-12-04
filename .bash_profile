@@ -9,6 +9,9 @@ export PATH=${PATH}:${ANDROID_HOME}/bin
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=${PATH}:${JAVA_HOME}/bin
 
+# Add fastlane to the `$PATH`
+export PATH="$HOME/.fastlane/bin:$PATH"
+
 # Configure PKG_CONFIG_PATH
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
 export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
