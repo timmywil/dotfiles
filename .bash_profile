@@ -16,6 +16,11 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
 export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
 
+## Use Ruby from brew
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.5.0/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+
 # Docker vars
 #export DOCKER_HOST="tcp://192.168.99.100:2376"
 #export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/dinghy"
