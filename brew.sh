@@ -135,7 +135,6 @@ brew install n
 
 brew cask install docker 2> /dev/null
 brew cask install dropbox 2> /dev/null
-brew cask install fastlane 2> /dev/null
 brew cask install firefox 2> /dev/null
 brew cask install firefoxdeveloperedition 2> /dev/null
 brew cask install google-chrome 2> /dev/null
