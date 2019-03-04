@@ -136,8 +136,6 @@ brew cask install docker 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install firefox 2> /dev/null
 brew cask install firefoxdeveloperedition 2> /dev/null
-brew cask install google-chrome 2> /dev/null
-brew cask install google-chrome-canary 2> /dev/null
 brew cask install imagealpha 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
