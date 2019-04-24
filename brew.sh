@@ -117,7 +117,7 @@ brew install amazon-ecr-credential-helper
 brew install git-flow-avh
 
 # Install latest ruby and common gems
-brew install ruby
+brew install rbenv
 gem update --system
 gem update
 
