@@ -16,6 +16,11 @@ export PATH="$HOME/.fastlane/bin:$PATH"
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
 export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
 
+# Set up environment for nvm
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
 ## Use Ruby from brew
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/2.5.0/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/ruby/lib"
