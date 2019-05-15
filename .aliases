@@ -9,19 +9,15 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias co="cd ~/code"
-alias ot="cd ~/code/opentable"
-alias jq="cd ~/code/jquery"
-alias hosts="cd /c/Windows/System32/drivers/etc"
-alias umami="cd ~/code/opentable/UmamiFrontend/OT.Restaurant.FrontEnd.Site"
 alias g="git"
 
 # Webstorm
 ws() {
-    /c/Program\ Files/JetBrains/WebStorm\ 2017.1.4/bin/webstorm64.exe $PWD/$1
+    /c/Program\ Files/JetBrains/>>\ 2017.1.4/bin/webstorm64.exe $PWD/$1
 }
 
 # Git aliases
@@ -58,8 +54,8 @@ fi
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"
 
-# List all files colorized in long format, including dot files
-alias la="ls -laF ${colorflag}"
+# List all files colorized in long format, excluding . and ..
+alias la="ls -lAF ${colorflag}"
 
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
@@ -81,9 +77,6 @@ alias week='date +%V'
 
 # Get OS X Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
 alias update='sudo softwareupdate -i -a; ~/brew.sh'
-
-# Show outdated dependencies at 0 depth
-alias old='npm outdated --depth 0'
 
 # List dependences at 0 depth
 alias nls='npm ls --depth 0'
@@ -109,7 +102,7 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 command -v hd > /dev/null || alias hd="hexdump -C"
 
 # macOS has no `md5sum`, so use `md5` as a fallback
-alias md5sum="md5 -r"
+command -v md5sum > /dev/null || alias md5sum="md5"
 
 # macOS has no `sha1sum`, so use `shasum` as a fallback
 command -v sha1sum > /dev/null || alias sha1sum="shasum"

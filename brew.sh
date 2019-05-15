@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+xcode-select --install
 # Install command-line tools using Homebrew.
 
 # Make sure we’re using the latest Homebrew.
@@ -8,42 +9,43 @@ brew update
 # Upgrade any already-installed formulae.
 brew upgrade
 
+# Save Homebrew’s installed location.
+BREW_PREFIX=$(brew --prefix)
+
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
+ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
 
 # Install some other useful utilities like `sponge`.
 brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed --with-default-names
+brew install gnu-sed
 # Install Bash 4.
-# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
-# running `chsh`.
 brew install bash
 brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
-if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
-  echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
-  chsh -s /usr/local/bin/bash;
+if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
+  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
+  chsh -s "${BREW_PREFIX}/bin/bash";
 fi;
 
 # Install `wget` with IRI support.
-brew install wget --with-iri
+brew install wget
 
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
 # Install more recent versions of some macOS tools.
-brew install vim --with-override-system-vi
+brew install vim
 brew install grep
 brew install openssh
 brew install screen
-brew unlink php56
-brew install homebrew/php/php56 --with-gmp
-brew link php56
+brew install php
+brew install gmp
 
 # Install font tools.
 brew tap bramstein/webfonttools
@@ -83,7 +85,7 @@ brew install ack
 brew install git
 brew install git-lfs
 brew install haproxy
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install lua
 brew install lynx
 brew install p7zip
@@ -101,11 +103,6 @@ brew install leiningen
 brew install the_silver_searcher
 brew install boot-clj
 
-# Install docker
-brew install docker docker-compose
-#brew tap codekitchen/dinghy
-#brew install dinghy
-
 # Pylon stuff
 brew install pyenv
 brew install redis
@@ -120,29 +117,21 @@ brew install amazon-ecr-credential-helper
 brew install git-flow-avh
 
 # Install latest ruby and common gems
-brew install ruby
+brew install rbenv
 gem update --system
 gem update
 
-# Install Node.js. Note: this installs `npm` too, using the recommended
-# installation method.
-# brew install node
-
-# Use the n module to install node versions
-brew install n
-
-# Remove outdated versions from the cellar.
-brew cleanup
+# Install nvm for managing node versions
+brew install nvm
 
 # Install native apps
 #brew untap caskroom/versions
 #brew tap caskroom/versions
 
+brew cask install docker 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install firefox 2> /dev/null
 brew cask install firefoxdeveloperedition 2> /dev/null
-brew cask install google-chrome 2> /dev/null
-brew cask install google-chrome-canary 2> /dev/null
 brew cask install imagealpha 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
@@ -161,5 +150,6 @@ brew cask install vlc 2> /dev/null
 # Cook companion deployment
 brew cask install aws-vault
 
-# Remove outdated versions of apps
-brew cask cleanup
+# Remove outdated versions from the cellar.
+# This also cleans up casks
+brew cleanup

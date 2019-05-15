@@ -21,3 +21,8 @@ Thumbs.db
 
 # Sublime workspace files
 *.sublime-workspace
+
+# Java cache files
+.classpath
+.project
+.settings
