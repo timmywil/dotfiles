@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$HOME/AppData/Local/Yarn/bin:$PATH"
 
 # Add python to PATH
 export PATH="$PATH:/c/Python27/"
