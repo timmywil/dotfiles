@@ -1,19 +1,5 @@
-# Add Android SDK tools to the `$PATH`
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# Add Java to the `$PATH`
-export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH=${PATH}:${JAVA_HOME}/bin
-
-# Add Homebrew bin to `$PATH`
-export PATH=/usr/local/sbin:$PATH
-
-# Add fastlane to the `$PATH`
-# export PATH="$HOME/.fastlane/bin:$PATH"
+# Add yarn bin to the `$PATH`
+export PATH="$HOME/AppData/Local/Yarn/bin:$PATH"
 
 # Add python to PATH
 export PATH="$PATH:/c/Python27/"
