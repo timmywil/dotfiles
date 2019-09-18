@@ -6,6 +6,9 @@ export PATH="$PATH:/c/Python27/"
 export PYTHONPATH="/c/Python27/"
 export PYTHON="/c/Python27/python.exe"
 
+# Add Android SDK to PATH
+export PATH="$PATH:$HOME/AppData/Local/Android/Sdk/platform-tools:$HOME/AppData/Local/Android/Sdk/emulator"
+
 # Configure PKG_CONFIG_PATH
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
 export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
