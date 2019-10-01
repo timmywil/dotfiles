@@ -3,8 +3,8 @@ export ANDROID_HOME=/Users/home/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator
 
 # Add Java to the `$PATH`
-export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH=${PATH}:${JAVA_HOME}/bin
+# export JAVA_HOME=$(/usr/libexec/java_home)
+# export PATH=${PATH}:${JAVA_HOME}/bin
 
 # Add fastlane to the `$PATH`
 # export PATH="$HOME/.fastlane/bin:$PATH"
