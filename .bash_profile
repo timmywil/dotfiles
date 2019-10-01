@@ -1,6 +1,3 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
-
 # Add Android SDK tools to the `$PATH`
 export ANDROID_HOME=/Users/home/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator
@@ -10,7 +7,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=${PATH}:${JAVA_HOME}/bin
 
 # Add fastlane to the `$PATH`
-export PATH="$HOME/.fastlane/bin:$PATH"
+# export PATH="$HOME/.fastlane/bin:$PATH"
 
 # Configure PKG_CONFIG_PATH
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
@@ -18,8 +15,7 @@ export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
 
 # Set up environment for nvm
 export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 ## Use Ruby from rbenv
 eval "$(rbenv init -)"
@@ -30,16 +26,13 @@ eval "$(rbenv init -)"
 #export DOCKER_TLS_VERIFY=1
 #export DOCKER_MACHINE_NAME=dinghy
 
-# Set clojure version in environment
-export BOOT_CLOJURE_VERSION="1.8.0"
-
 # pyenv
 #export PYENV_ROOT=/usr/local/var/pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+# if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 # macOS Sierra no longer saves SSH passphrases to the keychain
-ssh-add -A &> /dev/null
+# ssh-add -A &> /dev/null
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
