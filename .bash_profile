@@ -32,7 +32,7 @@ eval "$(rbenv init -)"
 # if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
 # macOS Sierra no longer saves SSH passphrases to the keychain
-# ssh-add -A &> /dev/null
+ssh-add -A &> /dev/null
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
