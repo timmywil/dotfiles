@@ -98,21 +98,6 @@ brew install tree
 brew install vbindiff
 brew install zopfli
 
-# For Clojure/Emacs
-brew install leiningen
-brew install the_silver_searcher
-brew install boot-clj
-
-# Pylon stuff
-brew install pyenv
-brew install redis
-brew install postgresql
-brew install pyenv-virtualenv
-brew install graphviz
-
-# Cook companion deployment
-brew install amazon-ecr-credential-helper
-
 # Install git-flow
 brew install git-flow-avh
 
@@ -120,35 +105,6 @@ brew install git-flow-avh
 brew install rbenv
 gem update --system
 gem update
-
-# Install nvm for managing node versions
-brew install nvm
-
-# Install native apps
-#brew untap caskroom/versions
-#brew tap caskroom/versions
-
-brew cask install docker 2> /dev/null
-brew cask install dropbox 2> /dev/null
-brew cask install firefox 2> /dev/null
-brew cask install firefoxdeveloperedition 2> /dev/null
-brew cask install imagealpha 2> /dev/null
-brew cask install imageoptim 2> /dev/null
-brew cask install iterm2 2> /dev/null
-brew cask install java 2> /dev/null
-brew cask install macvim 2> /dev/null
-brew cask install opera 2> /dev/null
-brew cask install opera-developer 2> /dev/null
-brew cask install the-unarchiver 2> /dev/null
-brew cask install torbrowser 2> /dev/null
-brew cask install transmission 2> /dev/null
-brew cask install ukelele 2> /dev/null
-brew cask install vagrant 2> /dev/null
-brew cask install virtualbox 2> /dev/null
-brew cask install vlc 2> /dev/null
-
-# Cook companion deployment
-brew cask install aws-vault
 
 # Remove outdated versions from the cellar.
 # This also cleans up casks
