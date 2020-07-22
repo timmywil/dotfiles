@@ -1,6 +1,9 @@
 # Add Android SDK tools to the `$PATH`
-export ANDROID_HOME=/Users/home/Library/Android/sdk
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Add Java to the `$PATH`
 export JAVA_HOME=$(/usr/libexec/java_home)
