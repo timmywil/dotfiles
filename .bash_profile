@@ -9,6 +9,9 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=${PATH}:${JAVA_HOME}/bin
 
+# Add Homebrew bin to `$PATH`
+export PATH=/usr/local/sbin:$PATH
+
 # Add fastlane to the `$PATH`
 # export PATH="$HOME/.fastlane/bin:$PATH"
 
