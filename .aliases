@@ -88,9 +88,8 @@ alias nls='npm ls --depth 0'
 # Update npm version without commit
 alias npmv='npm version --git-tag-version=false'
 
-# Google Chrome
-alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
-alias canary='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary'
+# Firefox Developer with debug server
+alias ffdebug="/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox --start-debugger-server"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
