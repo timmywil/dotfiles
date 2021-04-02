@@ -91,6 +91,9 @@ alias npmv='npm version --git-tag-version=false'
 # Firefox Developer with debug server
 alias ffdebug="/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox --start-debugger-server"
 
+# Vivaldi with debug server (brave disabled this)
+alias vivdebug="/Applications/Vivaldi.app/Contents/MacOS/Vivaldi --remote-debugging-port=9222"
+
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip="ipconfig getifaddr en0"
