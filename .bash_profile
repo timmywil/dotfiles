@@ -22,7 +22,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 ## Use Ruby from rbenv
-eval "$(rbenv init -)"
+# eval "$(rbenv init -)"
 
 # Docker vars
 #export DOCKER_HOST="tcp://192.168.99.100:2376"
