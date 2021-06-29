@@ -11,8 +11,6 @@ cp ./.gitignore-global ~/
 cp ./.functions ~/
 cp ./.exports ~/
 cp ./.npmrc ~/
-#cp ./.gnupg/gpg-agent.conf ~/.gnupg/
-cp ./.gnupg/gpg.conf ~/.gnupg/
-#cp -r ~/.gnupg/* ~/AppData/Roaming/gnupg/
+cp ./.yarnrc.yml ~/
 
 source ./.bash_profile;
