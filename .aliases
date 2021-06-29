@@ -36,6 +36,9 @@ alias gpuom="git pull --rebase origin main"
 alias gpuu="git pull --rebase upstream"
 alias gpuum="git pull --rebase upstream main"
 
+# yarn aliases
+alias yu="yarn upgrade-interactive"
+
 # dinghy shell command
 #alias dinghysh="eval \"$(dinghy shellinit)\""
 
