@@ -46,9 +46,6 @@ alias yu="yarn upgrade-interactive"
 alias gpod="git push origin develop"
 alias gpuod="git pull --rebase origin develop"
 
-# Enable git command autocompletion for aliases
-complete -o default -o nospace -F _git g
-
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
 	colorflag="--color"
