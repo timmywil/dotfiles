@@ -35,6 +35,10 @@ alias gpuum="git pull --rebase upstream main"
 # yarn aliases
 alias yu="yarn upgrade-interactive"
 
+# docker aliases
+alias dp="docker image prune -f && docker container prune -f"
+alias dstart="docker-compose build && dp && docker-compose up"
+
 # dinghy shell command
 #alias dinghysh="eval \"$(dinghy shellinit)\""
 
