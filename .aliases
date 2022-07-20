@@ -46,8 +46,11 @@ alias dbuild="docker compose build"
 alias dstart="dbuild && dprune && dup"
 alias dstop="docker compose stop"
 alias de="docker exec -it"
-alias dew="docker exec -it worblerai"
-alias dstartw="dbuild && dprune && dup -d && docker attach worblerai"
+
+# worblerai-specific docker aliases
+alias dupw="dup -d && docker attach worblerai"
+alias dew="de worblerai"
+alias dstartw="dbuild && dprune && dupw"
 
 # dinghy shell command
 #alias dinghysh="eval \"$(dinghy shellinit)\""
