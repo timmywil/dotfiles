@@ -41,10 +41,13 @@ alias yu="yarn upgrade-interactive"
 
 # docker aliases
 alias dprune="docker image prune -f && docker container prune -f && docker volume prune -f"
-alias dup="docker-compose up"
-alias dbuild="docker-compose build"
+alias dup="docker compose up"
+alias dbuild="docker compose build"
 alias dstart="dbuild && dprune && dup"
+alias dstop="docker compose stop"
 alias de="docker exec -it"
+alias dew="docker exec -it worblerai"
+alias dstartw="dbuild && dprune && dup -d && docker attach worblerai"
 
 # dinghy shell command
 #alias dinghysh="eval \"$(dinghy shellinit)\""
