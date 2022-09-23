@@ -40,7 +40,7 @@ alias gpuum="git pull --rebase upstream main"
 alias yu="yarn upgrade-interactive"
 
 # docker aliases
-alias dprune="docker image prune -f && docker container prune -f && docker volume prune -f"
+alias dprune="docker system prune -f"
 alias dup="docker compose up"
 alias dbuild="docker compose build"
 alias dstart="dbuild && dprune && dup"
