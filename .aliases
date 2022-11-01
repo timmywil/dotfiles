@@ -51,6 +51,7 @@ alias de="docker exec -it"
 alias dupw="dup -d && docker attach worblerai"
 alias dew="de worblerai"
 alias dstartw="dbuild && dprune && dupw"
+alias avdocker="aws-vault exec <your-profile-name> -- docker run -e AWS_REGION -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_SECURITY_TOKEN "
 
 # dinghy shell command
 #alias dinghysh="eval \"$(dinghy shellinit)\""
