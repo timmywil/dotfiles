@@ -52,7 +52,7 @@ alias avdocker="aws-vault exec timmy -- docker run -e AWS_REGION -e AWS_ACCESS_K
 # timmywil-specific docker aliases
 alias dupt="dup -d && docker attach timmywil"
 alias det="de timmywil"
-alias dstartt="dbuild && dprune && dupw"
+alias dstartt="dbuild && dprune && dupt"
 
 # dinghy shell command
 #alias dinghysh="eval \"$(dinghy shellinit)\""
