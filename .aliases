@@ -48,7 +48,7 @@ alias dstop="docker compose stop"
 alias de="docker exec -it"
 
 # worblerai-specific docker aliases
-alias dupw="aws-vault exec timmy -- docker compose up -d && docker attach worblerai"
+alias dupw="aws-vault exec timmy --duration=8h -- docker compose up -d && docker attach worblerai"
 alias dew="de worblerai"
 alias dstartw="dbuild && dprune && dupw"
 
