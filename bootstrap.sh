@@ -3,6 +3,7 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 cp ./.aliases ~/
 cp ./.bash_profile ~/
+cp ./.bashrc ~/.bashrc
 cp ./.bash_prompt ~/
 cp ./.extra ~/
 cp ./.gitconfig ~/
