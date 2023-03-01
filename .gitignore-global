@@ -15,6 +15,9 @@ Thumbs.db
 
 .idea
 .vscode
+.devcontainer.json
+devcontainer.env
+docker-compose.vscode.yml
 
 # Sass cache files
 .sass-cache
