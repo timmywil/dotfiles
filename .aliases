@@ -51,9 +51,9 @@ alias de="docker exec -it"
 alias aws="aws-vault exec timmy --duration=8h --"
 
 # worblerai-specific docker aliases
-alias dupw="aws docker compose up -d && docker attach worblerai"
+alias dupw="echo \"aws docker compose up --build -d && docker attach worblerai\" && aws docker compose up --build -d && docker attach worblerai"
 alias dew="de worblerai"
-alias dstartw="dbuild && dprune && dupw"
+alias dstartw="dprune && dupw"
 
 alias dockerawsrun="aws-vault exec timmy --duration=8h -- docker run -e AWS_REGION -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_SECURITY_TOKEN --rm -it"
 
