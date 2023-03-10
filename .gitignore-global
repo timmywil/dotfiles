@@ -13,6 +13,7 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
+# Editor files
 .idea
 .vscode
 .devcontainer.json
@@ -29,3 +30,6 @@ docker-compose.vscode.yml
 .classpath
 .project
 .settings
+
+# Local-only
+_local
