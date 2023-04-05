@@ -29,3 +29,5 @@ docker-compose.vscode.yml
 .classpath
 .project
 .settings
+
+_local
