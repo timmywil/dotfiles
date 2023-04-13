@@ -39,7 +39,7 @@ alias yu="yarn upgrade-interactive"
 alias dprune="docker system prune --volumes -f"
 alias dup="docker compose up"
 alias dbuild="docker compose build"
-alias dstart="dbuild && dprune && dup"
+alias dstart="dprune && dup --build -d"
 alias dstop="docker compose stop"
 alias de="docker exec -it"
 
