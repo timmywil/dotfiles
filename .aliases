@@ -41,9 +41,8 @@ alias yu="yarn upgrade-interactive"
 
 # docker aliases
 alias dprune="echo \"docker system prune --volumes -f && docker network prune -f\" && docker system prune --volumes -f && docker network prune -f"
-alias dup="docker compose up"
+alias dup="docker compose up --build"
 alias dbuild="docker compose build"
-alias dstart="dprune && dup --build -d"
 alias dstop="docker compose stop"
 alias de="docker exec -it"
 
@@ -54,7 +53,6 @@ alias aws="aws-vault exec timmy --duration=36h --"
 # worblerai-specific docker aliases
 alias dupw="echo \"aws docker compose up --build -d && docker attach worblerai\" && aws docker compose up --build -d && docker attach worblerai"
 alias dew="de worblerai"
-alias dstartw="dprune && dupw"
 
 alias dockerawsrun="aws docker run -e AWS_REGION -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -e AWS_SESSION_TOKEN -e AWS_SECURITY_TOKEN --rm -it"
 
