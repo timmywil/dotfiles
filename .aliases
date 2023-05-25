@@ -49,6 +49,7 @@ alias de="docker exec -it"
 # docker with aws-vault
 # duration is set to the max allowed by aws-vault
 alias aws="aws-vault exec timmy --duration=36h --"
+alias awsdup="aws-vault exec timmy --duration=36h -- docker compose up --build"
 
 # worblerai-specific docker aliases
 alias dupw="echo \"aws docker compose up --build -d && docker attach worblerai\" && aws docker compose up --build -d && docker attach worblerai"
