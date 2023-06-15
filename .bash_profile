@@ -1,15 +1,19 @@
 # Add Gpg4win to the PATH
 export PATH="/c/Program Files (x86)/GnuPG/bin:$PATH"
 
+# Add OpenSSH installation to PATH
+# https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI
+export PATH="/c/Program Files/OpenSSH:$PATH"
+
 # Add yarn bin to the `$PATH`
-export PATH="$HOME/AppData/Local/Yarn/bin:$PATH"
+# export PATH="$HOME/AppData/Local/Yarn/bin:$PATH"
 
 # Add Android SDK to PATH
-export ANDROID_HOME="$HOME/AppData/Local/Android/Sdk"
-export PATH="$PATH:$ANDROID_HOME/emulator"
-export PATH="$PATH:$ANDROID_HOME/tools"
-export PATH="$PATH:$ANDROID_HOME/tools/bin"
-export PATH="$PATH:$ANDROID_HOME/platform-tools"
+# export ANDROID_HOME="$HOME/AppData/Local/Android/Sdk"
+# export PATH="$PATH:$ANDROID_HOME/emulator"
+# export PATH="$PATH:$ANDROID_HOME/tools"
+# export PATH="$PATH:$ANDROID_HOME/tools/bin"
+# export PATH="$PATH:$ANDROID_HOME/platform-tools"
 
 # Add python to PATH
 export PATH="$PATH:/c/Python27/"
@@ -18,7 +22,7 @@ export PYTHON="/c/Python27/python.exe"
 
 # Configure PKG_CONFIG_PATH
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
-export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
+# export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
 
 # Set up environment for nvm
 export NVM_DIR="$HOME/.nvm"
