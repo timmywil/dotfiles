@@ -113,8 +113,9 @@
 	# https://git-scm.com/docs/git-update-index#_untracked_cache
 	untrackedCache = true
 
-	# Webstorm handles line endings
+	# Editor handles line endings
 	autocrlf = false
+	# editor = \"C:\\Users\\4timm\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
 
 [color]
 
