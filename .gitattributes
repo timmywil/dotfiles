@@ -1,3 +1,4 @@
 # Automatically normalize line endings for all text-based files
 # * text=auto
 # Was disabled because of https://github.com/mathiasbynens/dotfiles/issues/149 :(
+* text=auto eol=lf

@@ -115,6 +115,7 @@
 
 	# Editor handles line endings
 	autocrlf = false
+	eol = lf
 	# editor = \"C:\\Users\\4timm\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
 
 [color]
