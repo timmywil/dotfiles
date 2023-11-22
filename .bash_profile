@@ -1,3 +1,6 @@
+# https://github.com/microsoft/vscode/issues/151105
+export PROMPT_COMMAND="history -a"
+
 # Add Gpg4win to the PATH
 export PATH="/c/Program Files (x86)/GnuPG/bin:$PATH"
 
