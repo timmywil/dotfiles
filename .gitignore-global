@@ -23,9 +23,6 @@ docker-compose.vscode.yml
 # Sass cache files
 .sass-cache
 
-# Sublime workspace files
-*.sublime-workspace
-
 # Java cache files
 .classpath
 .project
