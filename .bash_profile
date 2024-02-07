@@ -9,14 +9,14 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # export JAVA_HOME=$(/usr/libexec/java_home)
 # export PATH=${PATH}:${JAVA_HOME}/bin
 
-# Add Homebrew bin to `$PATH`
-export PATH=/opt/homebrew/bin:$PATH
+# Add Homebrew bin and sbin to `$PATH`
+export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
+
+# Add Visual Studio Code (code)
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Opt out of Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
-
-# Add fastlane to the `$PATH`
-# export PATH="$HOME/.fastlane/bin:$PATH"
 
 # Configure PKG_CONFIG_PATH
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
