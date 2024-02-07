@@ -25,7 +25,7 @@ brew install findutils
 brew install gnu-sed
 # Install a modern version of Bash.
 brew install bash
-brew install bash-completion2
+brew install bash-completion@2
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
@@ -97,9 +97,6 @@ brew install git
 # brew install tree
 # brew install vbindiff
 # brew install zopfli
-
-# Install git-flow
-# brew install git-flow-avh
 
 # Install latest ruby and common gems
 brew install rbenv

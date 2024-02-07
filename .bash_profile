@@ -71,6 +71,10 @@ if which brew &> /dev/null && [ -r "$(brew --prefix)/etc/profile.d/bash_completi
 	# Ensure existing Homebrew v1 completions continue to work
 	export BASH_COMPLETION_COMPAT_DIR="$(brew --prefix)/etc/bash_completion.d";
 	source "$(brew --prefix)/etc/profile.d/bash_completion.sh";
+
+	if [ -r "$(brew --prefix)/etc/bash_completion.d/git-completion.bash" ]; then
+		source "$(brew --prefix)/etc/bash_completion.d/git-completion.bash";
+	fi;
 elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
