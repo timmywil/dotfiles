@@ -11,6 +11,10 @@ rsync --exclude ".git/" \
 	--exclude "LICENSE-MIT.txt" \
 	--exclude "iterm.json" \
 	--exclude ".vscode/" \
+	--exclude "gpg-agent.conf" \
 	-avh --no-perms . ~;
+
+# Add gpg-agent.conf to ~/.gnupg
+cp -f gpg-agent.conf ~/.gnupg/;
 
 source ~/.bash_profile;
