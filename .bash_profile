@@ -1,3 +1,6 @@
+# Add local bin to the `$PATH`
+export PATH=/usr/local/bin:$PATH
+
 # Add Android SDK tools to the `$PATH`
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
@@ -11,9 +14,6 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Add Homebrew bin and sbin to `$PATH`
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
-
-# Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Opt out of Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
