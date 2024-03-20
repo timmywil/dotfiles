@@ -13,6 +13,7 @@ Thumbs.db
 .Spotlight-V100
 .Trashes
 
+# Editor files
 .idea
 .vscode
 .devcontainer.json
@@ -22,12 +23,10 @@ docker-compose.vscode.yml
 # Sass cache files
 .sass-cache
 
-# Sublime workspace files
-*.sublime-workspace
-
 # Java cache files
 .classpath
 .project
 .settings
 
+# Local-only
 _local
