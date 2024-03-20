@@ -48,7 +48,10 @@ alias aws="aws-vault exec timmy --duration=36h --"
 alias awsdup="aws-vault exec timmy --duration=36h -- docker compose up --build"
 
 # warble-jobs command
-alias djobs="aws docker compose --profile vc --profile video-cpu --profile tts up --build"
+alias djobsvideo="aws docker compose --profile video up --build"
+alias djobsvc="aws docker compose --profile vc up --build"
+alias djobstts="aws docker compose --profile tts up --build"
+alias djobslipsync="aws docker compose --profile lipsync up --build"
 
 # dinghy shell command
 #alias dinghysh="eval \"$(dinghy shellinit)\""
