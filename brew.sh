@@ -82,6 +82,7 @@ brew install screen
 # Install other useful binaries.
 brew install git
 brew install pinentry-mac
+brew install --cask aws-vault
 # brew install ack
 # brew install exiv2
 # brew install git-lfs
