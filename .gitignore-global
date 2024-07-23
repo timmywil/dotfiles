@@ -20,6 +20,9 @@ Thumbs.db
 devcontainer.env
 docker-compose.vscode.yml
 
+# Emacs
+.dir-locals.el
+
 # Sass cache files
 .sass-cache
 
