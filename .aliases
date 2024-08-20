@@ -52,6 +52,7 @@ alias djobsvideo="aws docker compose --profile video up --build"
 alias djobsvc="aws docker compose --profile vc up --build"
 alias djobstts="aws docker compose --profile tts up --build"
 alias djobslipsync="aws docker compose --profile lipsync up --build"
+alias djobstemplate="aws docker compose --profile template up --build"
 
 # dinghy shell command
 #alias dinghysh="eval \"$(dinghy shellinit)\""
