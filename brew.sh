@@ -80,6 +80,7 @@ brew install screen
 # brew install xz
 
 # Install other useful binaries.
+brew install nvm
 brew install git
 brew install pinentry-mac
 brew install --cask aws-vault
