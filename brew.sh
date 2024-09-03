@@ -83,6 +83,16 @@ brew install screen
 brew install git
 brew install pinentry-mac
 brew install --cask aws-vault
+brew install --cask brave-browser
+brew install --cask discord
+brew install --cask docker
+brew install --cask element
+brew install --cask iterm2
+brew install --cask microsoft-teams
+brew install --cask signal
+brew install --cask sizeup
+brew install --cask slack
+brew install --cask visual-studio-code
 # brew install ack
 # brew install exiv2
 # brew install git-lfs
