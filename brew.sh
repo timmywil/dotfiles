@@ -119,6 +119,13 @@ brew install ruby
 gem update --system
 gem update
 
+# Install cocoapods and xcodeproj
+gem install cocoapods
+gem install xcodeproj
+
+# Install latest python
+brew install python
+
 # Remove outdated versions from the cellar.
 # This also cleans up casks
 brew cleanup
