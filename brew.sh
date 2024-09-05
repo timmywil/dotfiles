@@ -115,7 +115,7 @@ brew install --cask visual-studio-code
 # brew install zopfli
 
 # Install latest ruby and common gems
-brew install rbenv
+brew install ruby
 gem update --system
 gem update
 

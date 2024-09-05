@@ -15,6 +15,11 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Add Homebrew bin and sbin to `$PATH`
 export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
 
+# Add ruby to the `$PATH` from brew
+export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+
 # Opt out of Homebrew analytics
 export HOMEBREW_NO_ANALYTICS=1
 
@@ -25,9 +30,6 @@ export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
 # Set up environment for nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-## Use Ruby from rbenv
-eval "$(rbenv init -)"
 
 # Docker vars
 #export DOCKER_HOST="tcp://192.168.99.100:2376"
