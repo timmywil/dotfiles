@@ -12,7 +12,6 @@ cp ./.gitignore-global ~/
 cp ./.functions ~/
 cp ./.exports ~/
 cp ./.npmrc ~/
-cp ./.wslconfig ~/
 cp ./.yarnrc.yml ~/
 
 source ./.bash_profile;
