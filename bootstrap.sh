@@ -12,6 +12,7 @@ rsync --exclude ".git/" \
 	--exclude "iterm.json" \
 	--exclude ".vscode/" \
 	--exclude "gpg-agent.conf" \
+	--exclude "com.googlecode.iterm2.plist" \
 	-avh --no-perms . ~;
 
 # Add gpg-agent.conf to ~/.gnupg

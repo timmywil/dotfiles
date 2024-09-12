@@ -31,6 +31,12 @@ export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
+# Add Flutter to PATH
+export PATH="$PATH:/Users/twillison/code/flutter/bin"
+
+# Add Dart executables to PATH
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
 # Docker vars
 #export DOCKER_HOST="tcp://192.168.99.100:2376"
 #export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/dinghy"
@@ -93,3 +99,7 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# Add iterm2 shell integration
+# Go to iTerm2 > Install Shell Integration to add necessary files to home directory
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
