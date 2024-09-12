@@ -95,6 +95,7 @@ brew install --cask openoffice
 brew install --cask signal
 brew install --cask sizeup
 brew install --cask slack
+brew install --cask tidal
 brew install --cask visual-studio-code
 
 # brew install ack
