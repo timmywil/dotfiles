@@ -83,10 +83,13 @@ brew install screen
 brew install nvm
 brew install git
 brew install pinentry-mac
+
 brew install --cask aws-vault
 brew install --cask brave-browser
+brew install --cask browserstacklock
 brew install --cask discord
 brew install --cask docker
+brew install --cask dropbox
 brew install --cask element
 brew install --cask iterm2
 brew install --cask microsoft-teams
@@ -95,6 +98,9 @@ brew install --cask openoffice
 brew install --cask signal
 brew install --cask sizeup
 brew install --cask slack
+brew install --cask spotify
+brew install --cask steam
+# brew install --cask temurin
 brew install --cask tidal
 brew install --cask visual-studio-code
 
