@@ -32,10 +32,13 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Add Flutter to PATH
-export PATH="$PATH:/Users/twillison/code/flutter/bin"
+export PATH="$PATH:$HOME/code/flutter/bin"
 
 # Add Dart executables to PATH
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# Test Flutter in Brave
+export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
 
 # Docker vars
 #export DOCKER_HOST="tcp://192.168.99.100:2376"
