@@ -74,6 +74,7 @@ brew install screen
 brew install nvm
 brew install git
 brew install pinentry-mac
+brew install adr-tools
 
 brew install --cask aws-vault
 brew install --cask brave-browser
