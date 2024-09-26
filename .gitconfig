@@ -118,6 +118,14 @@
 	eol = lf
 	# editor = \"C:\\Users\\4timm\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
 
+	packedGitLimit = 512m
+	packedGitWindowSize = 512m
+
+[pack]
+	deltaCacheSize = 2047m
+	packSizeLimit = 2047m
+	windowMemory = 2047m
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
