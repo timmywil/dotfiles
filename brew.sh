@@ -75,6 +75,7 @@ brew install nvm
 brew install git
 brew install pinentry-mac
 brew install adr-tools
+brew install awscli
 
 brew install --cask aws-vault
 brew install --cask brave-browser
@@ -88,6 +89,7 @@ brew install --cask iterm2
 brew install --cask microsoft-teams
 brew install --cask obsidian
 brew install --cask openoffice
+brew install --cask pgadmin4
 brew install --cask signal
 brew install --cask sizeup
 brew install --cask slack
@@ -103,7 +105,7 @@ gem update
 
 # Install iOS/Android development tools
 brew install fastlane
-brew install --cask temurin@17
+brew install --cask temurin@20
 
 # Install cocoapods and xcodeproj
 gem install cocoapods
