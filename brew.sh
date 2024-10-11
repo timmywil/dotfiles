@@ -87,6 +87,7 @@ brew install --cask element
 brew install --cask firefox
 brew install --cask iterm2
 brew install --cask microsoft-teams
+brew install --cask nordvpn
 brew install --cask obsidian
 brew install --cask openoffice
 brew install --cask pgadmin4
