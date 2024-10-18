@@ -53,35 +53,6 @@ brew install screen
 # brew install sfnt2woff-zopfli
 # brew install woff2
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups.
-# brew install aircrack-ng
-# brew install bfg
-# brew install binutils
-# brew install binwalk
-# brew install cifer
-# brew install dex2jar
-# brew install dns2tcp
-# brew install fcrackzip
-# brew install foremost
-# brew install hashpump
-# brew install hydra
-# brew install john
-# brew install knock
-# brew install netpbm
-# brew install nmap
-# brew install pngcheck
-# brew install socat
-# brew install sqlmap
-# brew install tcpflow
-# brew install tcpreplay
-# brew install tcptrace
-# brew install ucspi-tcp # `tcpserver` etc.
-# #brew install xpdf
-# brew install xz
-
-# Install other useful binaries.
-brew install git
-brew install pinentry-mac
 # brew install ack
 # brew install exiv2
 # brew install git-lfs
@@ -99,10 +70,49 @@ brew install pinentry-mac
 # brew install vbindiff
 # brew install zopfli
 
+# Install other useful binaries.
+brew install nvm
+brew install git
+brew install pinentry-mac
+brew install adr-tools
+brew install awscli
+
+brew install --cask aws-vault
+brew install --cask brave-browser
+brew install --cask browserstacklock
+brew install --cask discord
+brew install --cask docker
+brew install --cask dropbox
+brew install --cask element
+brew install --cask firefox
+brew install --cask iterm2
+brew install --cask nordvpn
+brew install --cask obsidian
+brew install --cask openoffice
+brew install --cask pgadmin4
+brew install --cask signal
+brew install --cask sizeup
+brew install --cask slack
+brew install --cask spotify
+brew install --cask steam
+brew install --cask tidal
+brew install --cask visual-studio-code
+
 # Install latest ruby and common gems
-brew install rbenv
+brew install ruby
 gem update --system
 gem update
+
+# Install iOS/Android development tools
+brew install fastlane
+brew install --cask temurin@20
+
+# Install cocoapods and xcodeproj
+gem install cocoapods
+gem install xcodeproj
+
+# Install latest python
+brew install python
 
 # Remove outdated versions from the cellar.
 # This also cleans up casks

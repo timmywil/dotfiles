@@ -11,12 +11,26 @@ export PATH="/c/Program Files/OpenSSH:$PATH"
 # Add yarn bin to the `$PATH`
 # export PATH="$HOME/AppData/Local/Yarn/bin:$PATH"
 
+# Add OpenJDK Java to PATH
+export PATH="$PATH:/c/Program Files/Eclipse Adoptium/jdk-20.0.2.9-hotspot/bin"
+
 # Add Android SDK to PATH
-# export ANDROID_HOME="$HOME/AppData/Local/Android/Sdk"
-# export PATH="$PATH:$ANDROID_HOME/emulator"
-# export PATH="$PATH:$ANDROID_HOME/tools"
-# export PATH="$PATH:$ANDROID_HOME/tools/bin"
-# export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export ANDROID_HOME="$HOME/AppData/Local/Android/Sdk"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+
+# Add Flutter to PATH
+export PATH="$PATH:$HOME/code/flutter/bin"
+
+# Add Dart executables to PATH
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# Test Flutter in Brave
+export CHROME_EXECUTABLE="/c/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
+
+# Add lcov tools in Windows
+export PATH="$PATH:/c/ProgramData/chocolatey/lib/lcov/tools/bin"
 
 # Add python to PATH
 export PATH="$PATH:/c/Python27/"

@@ -44,15 +44,15 @@ alias de="docker exec -it"
 
 # docker with aws-vault
 # duration is set to the max allowed by aws-vault
-alias aws="aws-vault exec timmy --duration=36h --"
-alias awsdup="aws-vault exec timmy --duration=36h -- docker compose up --build"
+alias awspylon="aws-vault exec timmy --duration=36h --"
+alias awspylondup="aws-vault exec timmy --duration=36h -- docker compose up --build"
 
 # warble-jobs command
-alias djobsvideo="aws docker compose --profile video up --build"
-alias djobsvc="aws docker compose --profile vc up --build"
-alias djobstts="aws docker compose --profile tts up --build"
-alias djobslipsync="aws docker compose --profile lipsync up --build"
-alias djobstemplate="aws docker compose --profile template up --build"
+alias djobsvideo="awspylon docker compose --profile video up --build"
+alias djobsvc="awspylon docker compose --profile vc up --build"
+alias djobstts="awspylon docker compose --profile tts up --build"
+alias djobslipsync="awspylon docker compose --profile lipsync up --build"
+alias djobstemplate="awspylon docker compose --profile template up --build"
 
 # dinghy shell command
 #alias dinghysh="eval \"$(dinghy shellinit)\""
