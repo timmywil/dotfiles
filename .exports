@@ -35,3 +35,31 @@ export GPG_TTY=$(tty);
 
 # Hide the “default interactive shell is now zsh” warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;
+
+# Set ruby environment variables
+export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
+
+# Opt out of Homebrew analytics
+export HOMEBREW_NO_ANALYTICS=1
+
+# Configure PKG_CONFIG_PATH
+# See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
+export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
+
+# Set up environment for nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Test Flutter in Brave
+export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
+
+# Allow the adb server to start while connected to a VPN
+# https://stackoverflow.com/questions/78970799/adb-server-does-not-start-when-vpn-is-active
+export ADB_MDNS_OPENSCREEN=0
+
+# Docker vars
+#export DOCKER_HOST="tcp://192.168.99.100:2376"
+#export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/dinghy"
+#export DOCKER_TLS_VERIFY=1
+#export DOCKER_MACHINE_NAME=dinghy

@@ -77,13 +77,13 @@ brew install pinentry-mac
 brew install adr-tools
 brew install awscli
 
+brew install --cask 1password
 brew install --cask aws-vault
 brew install --cask brave-browser
 brew install --cask browserstacklock
 brew install --cask discord
 brew install --cask docker
 brew install --cask dropbox
-brew install --cask element
 brew install --cask firefox
 brew install --cask iterm2
 brew install --cask nordvpn

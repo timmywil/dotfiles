@@ -1,62 +1,9 @@
-# Add local bin to the `$PATH`
-export PATH=/usr/local/bin:$PATH
-
-# Add Android SDK tools to the `$PATH`
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-# Add Java to the `$PATH`
-# export JAVA_HOME=$(/usr/libexec/java_home)
-# export PATH=${PATH}:${JAVA_HOME}/bin
-
-# Add Homebrew bin and sbin to `$PATH`
-export PATH=/opt/homebrew/bin:/opt/homebrew/sbin:$PATH
-
-# Add ruby to the `$PATH` from brew
-export PATH=/opt/homebrew/opt/ruby/bin:/opt/homebrew/lib/ruby/gems/3.3.0/bin:$PATH
-export LDFLAGS="-L/opt/homebrew/opt/ruby/lib"
-export CPPFLAGS="-I/opt/homebrew/opt/ruby/include"
-
-# Opt out of Homebrew analytics
-export HOMEBREW_NO_ANALYTICS=1
-
-# Configure PKG_CONFIG_PATH
-# See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
-export PKG_CONFIG_PATH="/opt/X11/lib/pkgconfig"
-
-# Set up environment for nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# Add Flutter to PATH
-export PATH="$PATH:$HOME/code/flutter/bin"
-
-# Add Dart executables to PATH
-export PATH="$PATH":"$HOME/.pub-cache/bin"
-
-# Test Flutter in Brave
-export CHROME_EXECUTABLE="/Applications/Brave Browser.app/Contents/MacOS/Brave Browser"
-
-# Docker vars
-#export DOCKER_HOST="tcp://192.168.99.100:2376"
-#export DOCKER_CERT_PATH="$HOME/.docker/machine/machines/dinghy"
-#export DOCKER_TLS_VERIFY=1
-#export DOCKER_MACHINE_NAME=dinghy
-
-# pyenv
-#export PYENV_ROOT=/usr/local/var/pyenv
-# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-# if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
-
 # macOS Sierra no longer saves SSH passphrases to the keychain
 ssh-add -A &> /dev/null
 
 # Load the shell dotfiles, and then some:
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.{bash_prompt,exports,aliases,functions,extra}; do
+for file in ~/.{bash_prompt,path,exports,aliases,functions,extra}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
