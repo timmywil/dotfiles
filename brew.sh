@@ -75,17 +75,17 @@ brew install nvm
 brew install git
 brew install pinentry-mac
 brew install adr-tools
-brew install awscli
 
 brew install --cask 1password
 brew install --cask aws-vault
 brew install --cask brave-browser
-brew install --cask browserstacklock
+brew install --cask browserstacklocal
 brew install --cask discord
 brew install --cask docker
 brew install --cask dropbox
 brew install --cask firefox
 brew install --cask iterm2
+brew install --cask microsoft-teams
 brew install --cask nordvpn
 brew install --cask obsidian
 brew install --cask openoffice
@@ -104,6 +104,7 @@ gem update --system
 gem update
 
 # Install iOS/Android development tools
+brew install --cask android-studio
 brew install fastlane
 brew install --cask temurin@20
 
