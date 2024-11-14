@@ -108,9 +108,13 @@ brew install --cask android-studio
 brew install fastlane
 brew install --cask temurin@20
 
-# Install cocoapods and xcodeproj
+# Install iOS development gems
 gem install cocoapods
 gem install xcodeproj
+gem install bundler
+
+# Clean up older gems
+gem cleanup
 
 # Install latest python
 brew install python
