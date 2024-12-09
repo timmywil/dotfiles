@@ -44,6 +44,7 @@ brew install vim
 brew install grep
 brew install openssh
 brew install screen
+brew install python
 # brew install php
 # brew install gmp
 
@@ -76,6 +77,7 @@ brew install git
 brew install pinentry-mac
 brew install adr-tools
 brew install awscli
+brew install lcov
 
 brew install --cask 1password
 brew install --cask aws-vault
@@ -116,9 +118,6 @@ gem install bundler
 
 # Clean up older gems
 gem cleanup
-
-# Install latest python
-brew install python
 
 # Remove outdated versions from the cellar.
 # This also cleans up casks
