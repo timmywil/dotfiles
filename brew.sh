@@ -79,27 +79,30 @@ brew install adr-tools
 brew install awscli
 brew install lcov
 
-brew install --cask 1password
-brew install --cask aws-vault
-brew install --cask brave-browser
+# These casks update themselves
+brew list --cask 1password &>/dev/null || brew install --cask 1password
+brew list --cask aws-vault &>/dev/null || brew install --cask aws-vault
+brew list --cask brave-browser &>/dev/null || brew install --cask brave-browser
+brew list --cask discord &>/dev/null || brew install --cask discord
+brew list --cask docker &>/dev/null || brew install --cask docker
+brew list --cask dropbox &>/dev/null || brew install --cask dropbox
+brew list --cask firefox &>/dev/null || brew install --cask firefox
+brew list --cask iterm2 &>/dev/null || brew install --cask iterm2
+brew list --cask microsoft-teams &>/dev/null || brew install --cask microsoft-teams
+brew list --cask nordvpn &>/dev/null || brew install --cask nordvpn
+brew list --cask obsidian &>/dev/null || brew install --cask obsidian
+brew list --cask openoffice &>/dev/null || brew install --cask openoffice
+brew list --cask signal &>/dev/null || brew install --cask signal
+brew list --cask sizeup &>/dev/null || brew install --cask sizeup
+brew list --cask slack &>/dev/null || brew install --cask slack
+brew list --cask spotify &>/dev/null || brew install --cask spotify
+brew list --cask steam &>/dev/null || brew install --cask steam
+brew list --cask tidal &>/dev/null || brew install --cask tidal
+brew list --cask visual-studio-code &>/dev/null || brew install --cask visual-studio-code
+
+# These casks can be updated via brew upgrade
 brew install --cask browserstacklocal
-brew install --cask discord
-brew install --cask docker
-brew install --cask dropbox
-brew install --cask firefox
-brew install --cask iterm2
-brew install --cask microsoft-teams
-brew install --cask nordvpn
-brew install --cask obsidian
-brew install --cask openoffice
 brew install --cask pgadmin4
-brew install --cask signal
-brew install --cask sizeup
-brew install --cask slack
-brew install --cask spotify
-brew install --cask steam
-brew install --cask tidal
-brew install --cask visual-studio-code
 
 # Install latest ruby and common gems
 brew install ruby
