@@ -92,6 +92,7 @@ brew list --cask microsoft-teams &>/dev/null || brew install --cask microsoft-te
 brew list --cask nordvpn &>/dev/null || brew install --cask nordvpn
 brew list --cask obsidian &>/dev/null || brew install --cask obsidian
 brew list --cask openoffice &>/dev/null || brew install --cask openoffice
+brew list --cask session-manager-plugin &>/dev/null || brew install --cask session-manager-plugin
 brew list --cask signal &>/dev/null || brew install --cask signal
 brew list --cask sizeup &>/dev/null || brew install --cask sizeup
 brew list --cask slack &>/dev/null || brew install --cask slack
