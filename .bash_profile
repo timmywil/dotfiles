@@ -24,7 +24,7 @@ export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
 export PATH="$PATH:$HOME/code/flutter/bin"
 
 # Add Dart executables to PATH
-export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="$PATH:$HOME/AppData/Local/Pub/Cache/bin"
 
 # Test Flutter in Brave
 export CHROME_EXECUTABLE="/c/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
@@ -36,6 +36,9 @@ export PATH="$PATH:/c/ProgramData/chocolatey/lib/lcov/tools/bin"
 export PATH="$PATH:/c/Python27/"
 export PYTHONPATH="/c/Python27/"
 export PYTHON="/c/Python27/python.exe"
+
+# Add awscli to PATH
+export PATH="$PATH:/c/Program Files/Amazon/AWSCLIV2:/c/Program Files/Amazon/SessionManagerPlugin/bin"
 
 # Configure PKG_CONFIG_PATH
 # See brew issue for cairo https://github.com/Homebrew/homebrew/issues/14123
