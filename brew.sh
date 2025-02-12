@@ -39,6 +39,14 @@ brew install wget
 # Install GnuPG to enable PGP-signing commits.
 brew install gnupg
 
+# Install rbenv to manage Ruby versions
+brew install rbenv
+
+# Update existing gems
+gem update --system
+gem update
+gem cleanup
+
 # Install more recent versions of some macOS tools.
 brew install vim
 brew install grep
@@ -105,23 +113,9 @@ brew list --cask visual-studio-code &>/dev/null || brew install --cask visual-st
 brew install --cask browserstacklocal
 brew install --cask pgadmin4
 
-# Install latest ruby and common gems
-brew install ruby
-gem update --system
-gem update
-
-# Install iOS/Android development tools
+# Install Android development tools
 brew install --cask android-studio
-brew install fastlane
 brew install --cask temurin@20
-
-# Install iOS development gems
-gem install cocoapods
-gem install xcodeproj
-gem install bundler
-
-# Clean up older gems
-gem cleanup
 
 # Remove outdated versions from the cellar.
 # This also cleans up casks

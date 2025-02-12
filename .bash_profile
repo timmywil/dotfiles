@@ -53,3 +53,6 @@ complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes Syste
 # Add iterm2 shell integration
 # Go to iTerm2 > Install Shell Integration to add necessary files to home directory
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+# Add rbenv to bash so that it loads every time
+eval "$(rbenv init - --no-rehash bash)"
