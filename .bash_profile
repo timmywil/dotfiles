@@ -56,3 +56,6 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 
 # Add rbenv to bash so that it loads every time
 eval "$(rbenv init - --no-rehash bash)"
+
+# asdf completion
+. <(asdf completion bash)
