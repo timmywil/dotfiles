@@ -65,3 +65,11 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # postgres
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
+# Build docs for erlang
+export KERL_BUILD_DOCS="yes"
+
+# Use brew icu4c
+export LDFLAGS="-L$(brew --prefix icu4c)/lib -L$(brew --prefix openssl)/lib"
+export CPPFLAGS="-I$(brew --prefix icu4c)/include -I/usr/local/opt/openssl@1.1/include"
+export PKG_CONFIG_PATH="$(brew --prefix icu4c)/lib/pkgconfig"

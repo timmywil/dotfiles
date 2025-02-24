@@ -47,6 +47,9 @@ gem update --system
 gem update
 gem cleanup
 
+# Install Java
+brew install --cask temurin@20
+
 # Install more recent versions of some macOS tools.
 brew install vim
 brew install grep
@@ -89,6 +92,7 @@ brew install lcov
 
 # These casks update themselves
 brew list --cask 1password &>/dev/null || brew install --cask 1password
+brew list --cask android-studio &>/dev/null || brew install --cask android-studio
 brew list --cask aws-vault &>/dev/null || brew install --cask aws-vault
 brew list --cask brave-browser &>/dev/null || brew install --cask brave-browser
 brew list --cask discord &>/dev/null || brew install --cask discord
@@ -97,7 +101,6 @@ brew list --cask dropbox &>/dev/null || brew install --cask dropbox
 brew list --cask firefox &>/dev/null || brew install --cask firefox
 brew list --cask iterm2 &>/dev/null || brew install --cask iterm2
 brew list --cask microsoft-teams &>/dev/null || brew install --cask microsoft-teams
-brew list --cask nordvpn &>/dev/null || brew install --cask nordvpn
 brew list --cask obsidian &>/dev/null || brew install --cask obsidian
 brew list --cask openoffice &>/dev/null || brew install --cask openoffice
 brew list --cask session-manager-plugin &>/dev/null || brew install --cask session-manager-plugin
@@ -112,10 +115,6 @@ brew list --cask visual-studio-code &>/dev/null || brew install --cask visual-st
 # These casks can be updated via brew upgrade
 brew install --cask browserstacklocal
 brew install --cask pgadmin4
-
-# Install Android development tools
-brew install --cask android-studio
-brew install --cask temurin@20
 
 # Remove outdated versions from the cellar.
 # This also cleans up casks

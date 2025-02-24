@@ -1011,7 +1011,7 @@
 			<key>HotKey Window Dock Click Action</key>
 			<integer>2</integer>
 			<key>HotKey Window Floats</key>
-			<false/>
+			<true/>
 			<key>HotKey Window Reopens On Activation</key>
 			<true/>
 			<key>Idle Code</key>
