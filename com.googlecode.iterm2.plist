@@ -4,6 +4,8 @@
 <dict>
 	<key>AlwaysOpenWindowAtStartup</key>
 	<true/>
+	<key>BracketedPasteMode</key>
+	<true/>
 	<key>CloseBookmarksWindowAfterOpening</key>
 	<true/>
 	<key>CopySelection</key>
@@ -1293,6 +1295,16 @@
 	<false/>
 	<key>OpenNoWindowsAtStartup</key>
 	<true/>
+	<key>PasteSpecialChunkDelay</key>
+	<real>0.01</real>
+	<key>PasteSpecialChunkSize</key>
+	<integer>1024</integer>
+	<key>PasteSpecialRegex</key>
+	<string></string>
+	<key>PasteSpecialSubstitution</key>
+	<string></string>
+	<key>PasteSpecialUseRegexSubstitution</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1326,6 +1338,8 @@
 			<string>kNextWindowPointerAction</string>
 		</dict>
 	</dict>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1339,7 +1353,6 @@
 	<key>ToolbeltTools</key>
 	<array>
 		<string>Command History</string>
-		<string>Recent Directories</string>
 	</array>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
