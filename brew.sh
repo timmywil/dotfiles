@@ -93,7 +93,7 @@ brew install lcov
 # These casks update themselves
 brew list --cask 1password &>/dev/null || brew install --cask 1password
 brew list --cask android-studio &>/dev/null || brew install --cask android-studio
-brew list --cask aws-vault &>/dev/null || brew install --cask aws-vault
+brew list --cask aws-vault-binary &>/dev/null || brew install --cask aws-vault-binary
 brew list --cask brave-browser &>/dev/null || brew install --cask brave-browser
 brew list --cask discord &>/dev/null || brew install --cask discord
 brew list --cask docker &>/dev/null || brew install --cask docker
