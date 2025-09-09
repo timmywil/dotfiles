@@ -60,9 +60,6 @@ export ADB_MDNS_OPENSCREEN=0
 #export DOCKER_TLS_VERIFY=1
 #export DOCKER_MACHINE_NAME=dinghy
 
-# asdf shims
-export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
-
 # postgres
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
 
