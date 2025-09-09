@@ -96,13 +96,13 @@ brew list --cask android-studio &>/dev/null || brew install --cask android-studi
 brew list --cask aws-vault-binary &>/dev/null || brew install --cask aws-vault-binary
 brew list --cask brave-browser &>/dev/null || brew install --cask brave-browser
 brew list --cask discord &>/dev/null || brew install --cask discord
-brew list --cask docker &>/dev/null || brew install --cask docker
 brew list --cask dropbox &>/dev/null || brew install --cask dropbox
 brew list --cask firefox &>/dev/null || brew install --cask firefox
 brew list --cask iterm2 &>/dev/null || brew install --cask iterm2
 brew list --cask microsoft-teams &>/dev/null || brew install --cask microsoft-teams
 brew list --cask obsidian &>/dev/null || brew install --cask obsidian
 brew list --cask openoffice &>/dev/null || brew install --cask openoffice
+brew list --cask orbstack &>/dev/null || brew install --cask orbstack
 brew list --cask session-manager-plugin &>/dev/null || brew install --cask session-manager-plugin
 brew list --cask signal &>/dev/null || brew install --cask signal
 brew list --cask sizeup &>/dev/null || brew install --cask sizeup
