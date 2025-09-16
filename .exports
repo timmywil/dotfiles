@@ -60,9 +60,6 @@ export ADB_MDNS_OPENSCREEN=0
 #export DOCKER_TLS_VERIFY=1
 #export DOCKER_MACHINE_NAME=dinghy
 
-# postgres
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
-
 # Build docs for erlang
 export KERL_BUILD_DOCS="yes"
 
