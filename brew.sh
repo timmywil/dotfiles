@@ -48,7 +48,7 @@ gem update
 gem cleanup
 
 # Install Java
-brew install --cask temurin@20
+brew install --cask temurin@21
 
 # Install more recent versions of some macOS tools.
 brew install vim
@@ -65,9 +65,17 @@ brew install python
 # brew install sfnt2woff-zopfli
 # brew install woff2
 
+# Install other useful binaries.
+brew install nvm
+brew install git
+brew install pinentry-mac
+brew install adr-tools
+brew install awscli
+brew install lcov
+
 # brew install ack
 # brew install exiv2
-# brew install git-lfs
+brew install git-lfs
 # brew install gs
 # brew install imagemagick
 # brew install lua
@@ -81,14 +89,6 @@ brew install python
 # brew install tree
 # brew install vbindiff
 # brew install zopfli
-
-# Install other useful binaries.
-brew install nvm
-brew install git
-brew install pinentry-mac
-brew install adr-tools
-brew install awscli
-brew install lcov
 
 # These casks update themselves
 brew list --cask 1password &>/dev/null || brew install --cask 1password
