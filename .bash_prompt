@@ -35,7 +35,7 @@ prompt_git() {
 		s+='+';
 	fi;
 	# Check for unstaged changes.
-	if ! $(git diff-files --quiet --ignore-submodules --); then
+	if ! $(git diff --quiet --ignore-submodules --); then
 		s+='!';
 	fi;
 	# Check for untracked files.
@@ -107,7 +107,10 @@ else
 	PS1+="\[${hostStyle}\]\h"; # host
 	PS1+="\[${white}\] in ";
 	PS1+="\[${green}\]\w"; # working directory full path
-	PS1+="\`prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\"\`"; # Git repository details
+	# Skip if in WSL
+	if [ -z "$WSL_DISTRO_NAME" ]; then
+		PS1+="\`prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\"\`"; # Git repository details
+	fi;
 	PS1+="\n";
 	PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 	export PS1;
