@@ -35,3 +35,74 @@ export GPG_TTY=$(tty);
 
 # Hide the “default interactive shell is now zsh” warning on macOS.
 export BASH_SILENCE_DEPRECATION_WARNING=1;
+
+# Set up environment for nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# https://github.com/microsoft/vscode/issues/151105
+export PROMPT_COMMAND="history -a"
+
+# Add Gpg4win to the PATH
+export PATH="/c/Program Files (x86)/GnuPG/bin:$PATH"
+
+# Add OpenSSH installation to PATH
+# https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI
+export PATH="/c/Program Files/OpenSSH:$PATH"
+
+# Add yarn bin to the `$PATH`
+# export PATH="$HOME/AppData/Local/Yarn/bin:$PATH"
+
+# Add OpenJDK Java to PATH
+export PATH="$PATH:/c/Program Files/Eclipse Adoptium/jdk-20.0.2.9-hotspot/bin"
+
+# Add Android SDK to PATH
+export ANDROID_HOME="$HOME/AppData/Local/Android/Sdk"
+export PATH="$PATH:$ANDROID_HOME/emulator"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin"
+
+# Add Flutter to PATH
+export PATH="$PATH:$HOME/code/flutter/bin"
+
+# Add dart executables to PATH
+export PATH="$PATH:$HOME/AppData/Local/Pub/Cache/bin"
+
+# Test Flutter in Brave
+export CHROME_EXECUTABLE="/c/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe"
+
+# Add lcov tools in Windows
+export PATH="$PATH:/c/ProgramData/chocolatey/lib/lcov/tools/bin"
+
+# Add python to PATH
+export PATH="$PATH:/c/Python27/"
+export PYTHONPATH="/c/Python27/"
+export PYTHON="/c/Python27/python.exe"
+
+# Add awscli to PATH
+export PATH="$PATH:/c/Program Files/Amazon/AWSCLIV2:/c/Program Files/Amazon/SessionManagerPlugin/bin"
+
+# ===================
+# WSL Specific Exports
+if [[ -n "$WSL_DISTRO_NAME" ]]; then
+  export CODE="/mnt/c/Users/timmy/code"
+
+  # Save SSH passphrase to keychain
+  # Still requires entering the passphrase once on WSL startup
+  if [ -d "/usr/bin/keychain" ]; then
+    /usr/bin/keychain ~/.ssh/id_ed25519
+    source $HOME/.keychain/TimmysPC-sh
+  fi
+
+  # Add Go to PATH in WSL
+  if [ -d "/usr/local/go" ]; then
+    export GOROOT="/usr/local/go"
+    export GOPATH="$HOME/go"
+    export PATH="$GOPATH/bin:$GOROOT/bin:$PATH"
+  fi
+
+  # Add asdf to PATH
+  if [ -d "$HOME/.asdf/shims" ]; then
+    export PATH="$HOME/.asdf/shims:$PATH"
+  fi
+fi
