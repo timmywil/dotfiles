@@ -33,3 +33,6 @@ docker-compose.vscode.yml
 
 # Local-only
 _local
+
+# Elixir
+.elixir_ls
