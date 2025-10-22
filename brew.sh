@@ -98,6 +98,7 @@ brew list --cask brave-browser &>/dev/null || brew install --cask brave-browser
 brew list --cask discord &>/dev/null || brew install --cask discord
 brew list --cask dropbox &>/dev/null || brew install --cask dropbox
 brew list --cask firefox &>/dev/null || brew install --cask firefox
+brew list --cask firefox@developer-edition &>/dev/null || brew install --cask firefox@developer-edition
 brew list --cask iterm2 &>/dev/null || brew install --cask iterm2
 brew list --cask microsoft-teams &>/dev/null || brew install --cask microsoft-teams
 brew list --cask obsidian &>/dev/null || brew install --cask obsidian
