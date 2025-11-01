@@ -11,7 +11,6 @@ cp ./.gitattributes ~/
 cp ./.gitignore-global ~/
 cp ./.functions ~/
 cp ./.exports ~/
-cp ./.npmrc ~/
 cp ./.yarnrc.yml ~/
 
 source ./.bash_profile;
