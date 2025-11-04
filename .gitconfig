@@ -29,6 +29,9 @@
 	pr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
 	pp = format-patch -U8 --stdout
 
+	# Delete local branches that have been removed from the remote.
+	gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f"
+
 	# Clone a repository including all submodules
 	c = clone --recursive
 
