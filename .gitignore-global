@@ -34,5 +34,8 @@ docker-compose.vscode.yml
 # Local-only
 _local
 
+# Claude
+.claude
+
 # Elixir
 .elixir_ls
