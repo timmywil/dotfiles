@@ -211,3 +211,6 @@ alias macgen="hexdump -n 6 -ve '1/1 \"%.2x \"' /dev/random | awk -v a=\"2,6,a,e\
 # Flutter testing
 alias fto="flutter test --coverage && lcov --remove coverage/lcov.info '**/__generated__/**' --remove coverage/lcov.info 'lib/localization/*.dart' -o coverage/lcov.info && genhtml coverage/lcov.info -o coverage/html && o coverage/html/index.html"
 alias ft="flutter test --coverage && genhtml coverage/lcov.info -o coverage/html && o coverage/html/index.html"
+
+# Flutter upgrade with packages
+alias fup="flutter pub upgrade --major-versions && for dir in packages/*/; do (cd "\$dir" && flutter pub upgrade --major-versions); done"
