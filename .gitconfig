@@ -30,7 +30,9 @@
 	pp = format-patch -U8 --stdout
 
 	# Delete local branches that have been removed from the remote.
-	gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f"
+	# xargs -r is used to avoid running `git branch -D` with no arguments, which throws an error.
+	# This is only needed for GNU xargs in Git Bash. BSD xargs (e.g. on macOS) does not have the -r option, but does not error.
+	gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs -r git branch -D; }; f"
 
 	# Clone a repository including all submodules
 	c = clone --recursive
