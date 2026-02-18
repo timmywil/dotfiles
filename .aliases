@@ -210,4 +210,4 @@ alias fto="flutter test --coverage && lcov --remove coverage/lcov.info '**\__gen
 alias ft="flutter test --coverage && genhtml coverage/lcov.info -o coverage/html && start coverage/html/index.html"
 
 # Flutter upgrade with packages
-alias fup="flutter pub upgrade --major-versions && for dir in packages/*/; do (cd "\$dir" && flutter pub upgrade --major-versions); done && cd ios/ && pod repo update && pod update && cd .."
+alias fup="flutter pub upgrade --major-versions && for dir in packages/*/; do (cd "\$dir" && flutter pub upgrade --major-versions); done && cd ios/ && pod repo update && pod update && bundle update fastlane && cd ../android && bundle update fastlane && cd .."
