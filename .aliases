@@ -32,6 +32,10 @@ alias gpuom="git pull --rebase origin main"
 alias gpuu="git pull --rebase upstream"
 alias gpuum="git pull --rebase upstream main"
 
+# Update and check out the main branch.
+# Run git gone
+alias gg="git checkout main && git pull --rebase origin main && git gone"
+
 # yarn aliases
 alias yu="yarn upgrade-interactive"
 
