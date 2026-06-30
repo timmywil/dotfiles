@@ -30,7 +30,11 @@
 	pp = format-patch -U8 --stdout
 
 	# Delete local branches that have been removed from the remote.
-	gone = "!f() { git fetch --all --prune; git branch -vv | awk '/: gone]/{print $1}' | xargs git branch -D; }; f"
+	# Skips branches with commits not yet integrated into the default branch.
+	# Collapses each branch's total diff (since its merge-base) into one
+	# synthetic commit and asks git cherry whether the default branch already
+	# contains a patch-equivalent of it, so squash/rebase merges all count.
+	gone = "!f() { git fetch --all --prune; default=$(git symbolic-ref --short refs/remotes/origin/HEAD 2>/dev/null || echo origin/main); git branch -vv | awk '/: gone]/{print $1}' | while read -r branch; do base=$(git merge-base \"$default\" \"$branch\"); squash=$(git commit-tree \"$branch^{tree}\" -p \"$base\" -m _); if [ -z \"$(git cherry \"$default\" \"$squash\" | grep '^+')\" ]; then git branch -D \"$branch\"; else echo \"Skipping $branch: has commits not in $default\"; fi; done; }; f"
 
 	# Clone a repository including all submodules
 	c = clone --recursive
