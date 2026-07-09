@@ -67,3 +67,6 @@ export KERL_BUILD_DOCS="yes"
 export LDFLAGS="-L$(brew --prefix icu4c)/lib -L$(brew --prefix openssl)/lib"
 export CPPFLAGS="-I$(brew --prefix icu4c)/include -I/usr/local/opt/openssl@1.1/include"
 export PKG_CONFIG_PATH="$(brew --prefix icu4c)/lib/pkgconfig"
+
+# Disable non-essential traffic for Claude
+export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
