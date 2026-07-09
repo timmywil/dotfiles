@@ -82,6 +82,9 @@ export PYTHON="/c/Python27/python.exe"
 # Add awscli to PATH
 export PATH="$PATH:/c/Program Files/Amazon/AWSCLIV2:/c/Program Files/Amazon/SessionManagerPlugin/bin"
 
+# Disable non-essential traffic for Claude
+export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
+
 # ===================
 # WSL Specific Exports
 if [[ -n "$WSL_DISTRO_NAME" ]]; then
