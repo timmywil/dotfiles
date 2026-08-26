@@ -13,4 +13,7 @@ cp ./.functions ~/
 cp ./.exports ~/
 cp ./.yarnrc.yml ~/
 
+mkdir -p ~/.claude
+cp ./.claude/CLAUDE.md ./.claude/settings.json ~/.claude/
+
 source ./.bash_profile;
