@@ -1,1 +1,3 @@
 .extra
+!.claude
+.claude/settings.local.json

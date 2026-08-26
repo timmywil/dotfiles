@@ -11,6 +11,7 @@ rsync --exclude ".git/" \
 	--exclude "LICENSE-MIT.txt" \
 	--exclude "iterm.json" \
 	--exclude ".vscode/" \
+	--exclude ".claude/settings.local.json" \
 	--exclude "gpg-agent.conf" \
 	--exclude "com.googlecode.iterm2.plist" \
 	-avh --no-perms . ~;
