@@ -32,3 +32,6 @@ export PATH="$PATH:$HOME/code/flutter/bin"
 
 # Add asdf shims to PATH
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# Add One to One's engineering playbook
+export PATH="$PATH:$HOME/code/onetoonehealth/engineering-playbook/aws-bin"
